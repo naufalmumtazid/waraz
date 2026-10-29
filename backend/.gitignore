@@ -10,6 +10,7 @@ wheels/
 .venv
 
 # Local data & databases
-data/
+data/*
+!data/contoh/
 *.db
 .pytest_cache/

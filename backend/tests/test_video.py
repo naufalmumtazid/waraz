@@ -25,6 +25,7 @@ from src.video.hashing import hitung_dhash, hitung_phash, jarak_hamming, proses_
 from src.video.konfigurasi import STATUS_DAUR_ULANG, STATUS_TIDAK_DITEMUKAN
 from src.video.layanan import daftarkan_video_arsip, deteksi_video_daur_ulang
 from src.video.pencocokan import cocokkan_dua_sequence
+from src.video.periksa import periksa_video
 from src.video.skrip_demo import buat_video_sintetis
 
 # Import FastAPI app
@@ -168,6 +169,14 @@ class TestVideoPelacakDaurUlang(unittest.TestCase):
         self.assertIsNotNone(hasil_potongan["arsip_tercocok"])
         self.assertEqual(hasil_potongan["arsip_tercocok"]["id"], info_arsip["id"])
         self.assertGreaterEqual(hasil_potongan["consecutive_run"], 2)
+
+        # Uji fungsi utama periksa_video()
+        hasil_periksa = periksa_video(
+            video_path=self.video_potongan_path,
+            db=self.session,
+        )
+        self.assertEqual(hasil_periksa["status"], STATUS_DAUR_ULANG)
+        self.assertEqual(hasil_periksa["arsip_tercocok"]["id"], info_arsip["id"])
 
         # Uji video daur ulang versi overlay banner
         hasil_banner = deteksi_video_daur_ulang(

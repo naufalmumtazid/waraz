@@ -1,13 +1,25 @@
 """Entry point aplikasi FastAPI untuk backend WARAZ."""
 
 import logging
+import sys
 from contextlib import asynccontextmanager
+from pathlib import Path
+
+# Pastikan folder backend masuk ke sys.path agar impor `src.*` berjalan
+# baik saat dijalankan dari root repo maupun dari dalam folder backend
+_BACKEND_DIR = Path(__file__).resolve().parent
+if str(_BACKEND_DIR) not in sys.path:
+    sys.path.insert(0, str(_BACKEND_DIR))
 
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
-from src.db.koneksi import init_db
-from src.video.router import router as video_router
+try:
+    from src.db.koneksi import init_db
+    from src.video.router import router as video_router
+except ImportError:
+    from backend.src.db.koneksi import init_db
+    from backend.src.video.router import router as video_router
 
 logging.basicConfig(
     level=logging.INFO,
@@ -56,3 +68,9 @@ def root():
             "F2: Pelacak Video Daur Ulang (/api/v1/video)",
         ],
     }
+
+
+if __name__ == "__main__":
+    import uvicorn
+
+    uvicorn.run("main:app", host="0.0.0.0", port=8000, reload=True)

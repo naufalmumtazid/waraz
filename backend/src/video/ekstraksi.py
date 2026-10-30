@@ -53,6 +53,7 @@ def dapatkan_info_video(video_path: str | Path) -> Dict[str, Any]:
         }
     finally:
         cap.release()
+        del cap
 
 
 def ekstrak_frame(
@@ -138,6 +139,7 @@ def ekstrak_frame(
 
     finally:
         cap.release()
+        del cap
 
 
 def simpan_thumbnail(

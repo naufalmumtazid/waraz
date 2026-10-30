@@ -7,7 +7,7 @@ Dapat dijalankan langsung dengan perintah:
 import os
 import shutil
 import sys
-import tempfile
+import uuid
 from pathlib import Path
 
 import streamlit as st
@@ -44,6 +44,15 @@ def get_db():
         return db
     finally:
         pass
+
+
+def hapus_berkas_aman(path: Path):
+    """Menghapus berkas sementara secara aman di Windows tanpa crash jika handle terkunci sesaat."""
+    if path and path.exists():
+        try:
+            path.unlink()
+        except Exception:
+            pass
 
 
 st.title("🛡️ WARAZ — Pelacak Video Daur Ulang (F2)")
@@ -87,11 +96,14 @@ with tab_analisis:
         uploaded_file = st.file_uploader(
             "Pilih berkas video (MP4, MKV, WebM):",
             type=["mp4", "mkv", "webm", "avi"],
+            key="video_uploader",
         )
         if uploaded_file is not None:
-            tfile = tempfile.NamedTemporaryFile(delete=False, suffix=".mp4")
-            tfile.write(uploaded_file.read())
-            video_siap_uji = Path(tfile.name)
+            ext = Path(uploaded_file.name).suffix or ".mp4"
+            temp_path = TEMP_DIR / f"upload_ui_{uuid.uuid4()}{ext}"
+            with open(temp_path, "wb") as f:
+                f.write(uploaded_file.getbuffer())
+            video_siap_uji = temp_path
             nama_video_uji = uploaded_file.name
 
     with col_preset:
@@ -216,9 +228,10 @@ with tab_arsip_baru:
                 st.error("Berkas video dan judul wajib diisi.")
             else:
                 with st.spinner("Mengekstrak frame dan menyimpan hash ke database..."):
-                    t_raw = tempfile.NamedTemporaryFile(delete=False, suffix=".mp4")
-                    t_raw.write(f_upload.read())
-                    t_raw_path = Path(t_raw.name)
+                    ext = Path(f_upload.name).suffix or ".mp4"
+                    t_raw_path = TEMP_DIR / f"arsip_ui_{uuid.uuid4()}{ext}"
+                    with open(t_raw_path, "wb") as f:
+                        f.write(f_upload.getbuffer())
 
                     try:
                         info_baru = daftarkan_video_arsip(
@@ -231,5 +244,4 @@ with tab_arsip_baru:
                         )
                         st.success(f"Berhasil! Video '{f_judul}' didaftarkan dengan {info_baru['total_frame_hash']} keyframe.")
                     finally:
-                        if t_raw_path.exists():
-                            t_raw_path.unlink()
+                        hapus_berkas_aman(t_raw_path)

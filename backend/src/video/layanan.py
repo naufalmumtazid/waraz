@@ -53,6 +53,15 @@ def daftarkan_video_arsip(
     if not path.exists():
         raise FileNotFoundError(f"Berkas video tidak ditemukan di: {video_path}")
 
+    judul_bersih = judul.strip()
+    if not judul_bersih:
+        raise ValueError("Judul video arsip tidak boleh kosong.")
+
+    # Cek duplikasi judul agar tidak terjadi pendaftaran berulang
+    duplikat = db.query(ArsipVideo).filter(ArsipVideo.judul.ilike(judul_bersih)).first()
+    if duplikat:
+        raise ValueError(f"Video dengan judul '{judul_bersih}' sudah pernah terdaftar di arsip (ID: {duplikat.id}).")
+
     frames_data, info_video = proses_video_ke_hash(
         path,
         interval_detik=INTERVAL_DETIK,
@@ -65,7 +74,7 @@ def daftarkan_video_arsip(
     arsip_id = str(uuid.uuid4())
     arsip = ArsipVideo(
         id=arsip_id,
-        judul=judul,
+        judul=judul_bersih,
         tanggal_asli=tanggal_asli,
         sumber=sumber,
         tautan=tautan,

@@ -8,3 +8,9 @@ wheels/
 
 # Virtual environments
 .venv
+
+# Local data & databases
+data/*
+!data/contoh/
+*.db
+.pytest_cache/

@@ -1,17 +1,29 @@
 [project]
-name = "backend"
+name = "waraz-backend"
 version = "0.1.0"
-description = "Add your description here"
+description = "WARAZ Backend - Deteksi Koordinasi, Klarifikasi Narasi"
 readme = "README.md"
 authors = [
     { name = "naufalmumtazid", email = "naufalmumtazbusiness25@gmail.com" }
 ]
-requires-python = ">=3.14"
-dependencies = []
+requires-python = ">=3.10,<3.13"
+dependencies = [
+    "fastapi>=0.104.0",
+    "uvicorn>=0.24.0",
+    "pydantic>=2.0.0",
+    "python-multipart>=0.0.6",
+    "sqlalchemy>=2.0.0",
+    "psycopg2-binary>=2.9.9",
+    "supabase>=2.0.0",
+    "python-dotenv>=1.0.0",
+    "opencv-python-headless>=4.8.0",
+    "imagehash>=4.3.0",
+    "pillow>=10.0.0",
+    "numpy>=1.24.0,<2.0.0",
+    "streamlit>=1.28.0",
+    "pytest>=8.0.0",
+    "httpx>=0.26.0",
+]
 
-[project.scripts]
-backend = "backend:main"
-
-[build-system]
-requires = ["uv_build>=0.13.1,<0.14.0"]
-build-backend = "uv_build"
+[tool.uv]
+package = false

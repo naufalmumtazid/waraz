@@ -1,7 +1,7 @@
-"""Modul hashing perceptual untuk Fitur 2: Pelacak Video Daur Ulang.
+"""Perceptual hashing module for Feature 2: Recycled Video Tracker.
 
-Menggunakan imagehash (pHash dan dHash) untuk menghasilkan representasi
-visual kompak yang tangguh terhadap kompresi, cropping kecil, dan perubahan resolusi.
+Uses imagehash (pHash and dHash) to generate robust visual fingerprints
+resilient against compression, resizing, and minor modifications.
 """
 
 import logging
@@ -11,101 +11,73 @@ from typing import Any, Dict, List, Optional, Tuple
 import imagehash
 from PIL import Image
 
-from .ekstraksi import dapatkan_info_video, ekstrak_frame, simpan_thumbnail
-from .konfigurasi import HASH_SIZE, INTERVAL_DETIK, THUMBNAIL_DIR
+from .config import FRAME_INTERVAL_SECONDS, HASH_SIZE, THUMBNAIL_DIR
+from .extraction import extract_keyframes, get_video_info, save_thumbnail
 
-logger = logging.getLogger(__name__)
+logger = logging.getLogger("waraz.video.hashing")
 
 
-def hitung_phash(image: Image.Image, hash_size: int = HASH_SIZE) -> str:
-    """Menghitung perceptual hash (pHash - DCT based) dari sebuah gambar.
+def calculate_phash(image: Image.Image, hash_size: int = HASH_SIZE) -> str:
+    """Computes Discrete Cosine Transform (DCT) based perceptual hash (pHash).
 
     Args:
-        image: Objek PIL Image.
-        hash_size: Ukuran dimensi hash (default 8 -> 64-bit).
+        image: PIL Image object.
+        hash_size: Hash dimension (default 8 -> 64-bit).
 
     Returns:
-        String representasi hex (16 karakter untuk 64-bit).
+        Hexadecimal string (16 characters for 64-bit).
     """
     ph = imagehash.phash(image, hash_size=hash_size)
     return str(ph)
 
 
-def hitung_dhash(image: Image.Image, hash_size: int = HASH_SIZE) -> str:
-    """Menghitung difference hash (dHash - gradient based) dari sebuah gambar.
+def calculate_dhash(image: Image.Image, hash_size: int = HASH_SIZE) -> str:
+    """Computes gradient difference hash (dHash).
 
     Args:
-        image: Objek PIL Image.
-        hash_size: Ukuran dimensi hash (default 8).
+        image: PIL Image object.
+        hash_size: Hash dimension (default 8).
 
     Returns:
-        String representasi hex.
+        Hexadecimal string.
     """
     dh = imagehash.dhash(image, hash_size=hash_size)
     return str(dh)
 
 
-def jarak_hamming(hash1: str, hash2: str) -> int:
-    """Menghitung jarak Hamming antara dua string hexadecimal hash.
+def hamming_distance(hash1: str, hash2: str) -> int:
+    """Calculates bitwise Hamming distance between two hex hash strings.
 
-    Jarak 0 menunjukkan dua gambar identik secara perseptual.
-    Jarak <= 10 biasanya menunjukkan modifikasi ringan/daur ulang.
-
-    Args:
-        hash1: Hex string hash pertama.
-        hash2: Hex string hash kedua.
-
-    Returns:
-        Jumlah bit yang berbeda (0 sampai 64 untuk hash 64-bit).
+    Distance 0 indicates perceptual identity.
+    Distance <= 10 indicates mild compression or cropped recycling.
     """
     try:
         val1 = int(hash1, 16)
         val2 = int(hash2, 16)
         return bin(val1 ^ val2).count("1")
     except (ValueError, TypeError):
-        # Fallback jika string bukan format hex yang valid
         return 64
 
 
-def proses_video_ke_hash(
+def process_video_hashes(
     video_path: str | Path,
-    interval_detik: float = INTERVAL_DETIK,
-    simpan_thumbnail_pertama: bool = False,
+    interval_seconds: float = FRAME_INTERVAL_SECONDS,
+    save_first_thumbnail: bool = False,
     thumbnail_path: Optional[str | Path] = None,
 ) -> Tuple[List[Dict[str, Any]], Dict[str, Any]]:
-    """Mengekstrak frame dari video dan menghitung hash untuk setiap frame.
-
-    Args:
-        video_path: Path berkas video yang akan diproses.
-        interval_detik: Interval waktu antar keyframe.
-        simpan_thumbnail_pertama: Jika True, simpan thumbnail frame pertama.
-        thumbnail_path: Path tujuan jika ingin menyimpan thumbnail.
-
-    Returns:
-        Tuple:
-            - List of dict: [
-                {
-                    "urutan": int,
-                    "detik": float,
-                    "phash": str,
-                    "dhash": str,
-                    "image": PIL.Image
-                }, ...
-              ]
-            - Dict info video (fps, durasi, total_frame, resolusi)
-    """
+    """Extracts keyframes and computes dual pHash & dHash for each frame."""
     path = Path(video_path)
-    info_video = dapatkan_info_video(path)
-    frames = ekstrak_frame(path, interval_detik=interval_detik)
+    info_video = get_video_info(path)
+    frames = extract_keyframes(path, interval_seconds=interval_seconds)
 
-    hasil_hash: List[Dict[str, Any]] = []
+    hash_results: List[Dict[str, Any]] = []
 
     for item in frames:
         pil_img = item["image"]
-        ph = hitung_phash(pil_img)
-        dh = hitung_dhash(pil_img)
+        ph = calculate_phash(pil_img)
+        dh = calculate_dhash(pil_img)
 
-        hasil_hash.append({
+        hash_results.append({
             "urutan": item["urutan"],
             "detik": item["detik"],
             "phash": ph,
@@ -113,11 +85,17 @@ def proses_video_ke_hash(
             "image": pil_img,
         })
 
-    # Simpan thumbnail pertama jika diminta
-    if simpan_thumbnail_pertama and hasil_hash:
-        pertama = hasil_hash[0]["image"]
+    if save_first_thumbnail and hash_results:
+        first_frame = hash_results[0]["image"]
         target_thumb = thumbnail_path or (THUMBNAIL_DIR / f"{path.stem}_thumb.jpg")
-        simpan_thumbnail(pertama, target_thumb)
+        save_thumbnail(first_frame, target_thumb)
         info_video["thumbnail_path"] = str(target_thumb)
 
-    return hasil_hash, info_video
+    return hash_results, info_video
+
+
+# Backward compatibility aliases
+hitung_phash = calculate_phash
+hitung_dhash = calculate_dhash
+jarak_hamming = hamming_distance
+proses_video_ke_hash = process_video_hashes

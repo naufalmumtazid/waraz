@@ -1,0 +1,1802 @@
+[
+  {
+    "id": 1,
+    "claim": "Pemerintah diam-diam mencabut regulasi media sosial tanpa sepengetahuan DPR.",
+    "status": "hoaks",
+    "summary": "Tidak ada dokumen resmi yang mengonfirmasi pencabutan tersebut. Klaim beredar melalui pesan berantai tanpa sumber primer yang valid.",
+    "category": "kebijakan",
+    "source": "https://turnbackhoax.id",
+    "generated_at": "2026-10-30"
+  },
+  {
+    "id": 2,
+    "claim": "Dokumen bocor mengungkap anggaran khusus negara dialokasikan untuk membayar buzzer pembuat hoaks terkait pariwisata.",
+    "status": "hoaks",
+    "summary": "Dokumen yang beredar adalah draf komunikasi publik kementerian, namun narasinya dipintir seolah-olah dialokasikan khusus untuk produksi hoaks.",
+    "category": "sektor",
+    "source": "https://kominfo.go.id/content/detail",
+    "generated_at": "2026-10-30"
+  },
+  {
+    "id": 3,
+    "claim": "Viral: warga dipaksa bayar kebijakan upah minimum dua kali lipat mulai bulan depan.",
+    "status": "hoaks",
+    "summary": "Tidak ada peraturan resmi yang mengatur kenaikan ganda tersebut. Gambar yang digunakan sebagai bukti adalah hasil editan.",
+    "category": "kebijakan",
+    "source": "https://cekfakta.tempo.co",
+    "generated_at": "2026-10-30"
+  },
+  {
+    "id": 4,
+    "claim": "Pemerintah secara resmi merekrut influencer dan buzzer untuk membungkam kritik publik di ruang digital.",
+    "status": "hoaks",
+    "summary": "Pemerintah menegaskan kerja sama dengan influencer murni dilakukan untuk sosialisasi program pembangunan, bukan untuk membungkam kritik.",
+    "category": "isu",
+    "source": "https://liputan6.com/cek-fakta",
+    "generated_at": "2026-10-30"
+  },
+  {
+    "id": 5,
+    "claim": "Buzzer sengaja memelintir data statistik sektor ketahanan pangan untuk menutupi evaluasi kinerja program.",
+    "status": "disinformasi",
+    "summary": "Data yang dipaparkan lembaga resmi telah melalui audit independen, namun klaim yang beredar di media sosial menggunakan pemotongan grafik yang menyesatkan.",
+    "category": "sektor",
+    "source": "https://ajiindonesia.or.id/independen.or.id",
+    "generated_at": "2026-10-30"
+  },
+  {
+    "id": 6,
+    "claim": "Laporan internal perubahan iklim sengaja disembunyikan karena merugikan partai berkuasa menjelang pemilu.",
+    "status": "disinformasi",
+    "summary": "Laporan tersebut tersedia publik di situs resmi lembaga terkait. Narasi 'disembunyikan' dibuat untuk memancing ketidakpercayaan terhadap institusi.",
+    "category": "isu",
+    "source": "https://turnbackhoax.id",
+    "generated_at": "2026-10-30"
+  },
+  {
+    "id": 7,
+    "claim": "Data kenaikan tarif pajak yang dirilis pemerintah sengaja dimanipulasi agar terlihat sukses sebelum pilkada.",
+    "status": "disinformasi",
+    "summary": "Metodologi pengumpulan data mengikuti standar BPS. Klaim manipulasi muncul dari akun anonim tanpa bukti metodologis.",
+    "category": "kebijakan",
+    "source": "https://kominfo.go.id/content/detail",
+    "generated_at": "2026-10-30"
+  },
+  {
+    "id": 8,
+    "claim": "Jaringan buzzer terkoordinasi menyebarkan narasi palsu soal ketenagakerjaan dengan pola unggahan identik di ratusan akun.",
+    "status": "disinformasi",
+    "summary": "Analisis CIB (Coordinated Inauthentic Behavior) oleh peneliti independen mengonfirmasi pola koordinasi, namun konten dasar mengandung fakta yang diputarbalikkan.",
+    "category": "sektor",
+    "source": "https://cekfakta.tempo.co",
+    "generated_at": "2026-10-30"
+  },
+  {
+    "id": 9,
+    "claim": "Trending topik media sosial mengenai krisis pangan global disetel sepenuhnya oleh jaringan buzzer pesanan kelompok politik.",
+    "status": "sebagian benar",
+    "summary": "Analisis media sosial mendeteksi lonjakan aktivitas akun terkoordinasi (CIB), namun tidak seluruhnya berasal dari satu pesanan tunggal.",
+    "category": "isu",
+    "source": "https://liputan6.com/cek-fakta",
+    "generated_at": "2026-10-30"
+  },
+  {
+    "id": 10,
+    "claim": "penghapusan kartu prakerja memang naik, namun kenaikannya disebut jauh lebih besar dari kenyataan yang berlaku.",
+    "status": "sebagian benar",
+    "summary": "Kenaikan memang terjadi sesuai regulasi yang berlaku, namun angka yang viral dalam narasi tersebut dilebih-lebihkan hingga tiga kali lipat.",
+    "category": "kebijakan",
+    "source": "https://ajiindonesia.or.id/independen.or.id",
+    "generated_at": "2026-10-30"
+  },
+  {
+    "id": 11,
+    "claim": "Anggaran sektor sumber daya alam memang dipotong, tetapi bukan untuk keperluan kampanye seperti yang diklaim.",
+    "status": "sebagian benar",
+    "summary": "Pemotongan anggaran memang terjadi akibat efisiensi fiskal, namun klaim bahwa dana dialihkan ke keperluan kampanye tidak didukung bukti apapun.",
+    "category": "sektor",
+    "source": "https://turnbackhoax.id",
+    "generated_at": "2026-10-30"
+  },
+  {
+    "id": 12,
+    "claim": "Pemerintah resmi mengumumkan kebijakan upah minimum berlaku mulai kuartal berikutnya melalui Peraturan Presiden.",
+    "status": "benar",
+    "summary": "Peraturan Presiden telah diterbitkan dan dapat diakses di lembaran negara. Tidak ditemukan unsur manipulasi dalam penyebaran informasi ini.",
+    "category": "kebijakan",
+    "source": "https://kominfo.go.id/content/detail",
+    "generated_at": "2026-10-30"
+  },
+  {
+    "id": 13,
+    "claim": "Lembaga independen mengkonfirmasi adanya jaringan disinformasi terkait kebebasan berpendapat dengan bukti forensik digital.",
+    "status": "benar",
+    "summary": "Laporan lengkap tersedia dengan metodologi terbuka. Temuan divalidasi oleh tiga lembaga riset berbeda secara independen.",
+    "category": "isu",
+    "source": "https://cekfakta.tempo.co",
+    "generated_at": "2026-10-30"
+  },
+  {
+    "id": 14,
+    "claim": "Indeks kualitas sektor infrastruktur digital meningkat berdasarkan laporan tahunan BPS yang dipublikasikan secara transparan.",
+    "status": "benar",
+    "summary": "Data BPS tersedia di portal resmi dengan metodologi yang dapat diverifikasi publik. Tidak ada indikasi manipulasi narasi dalam penyebaran informasi ini.",
+    "category": "sektor",
+    "source": "https://liputan6.com/cek-fakta",
+    "generated_at": "2026-10-30"
+  },
+  {
+    "id": 15,
+    "claim": "Pemerintah diam-diam mencabut kebijakan impor pangan tanpa sepengetahuan DPR.",
+    "status": "hoaks",
+    "summary": "Tidak ada dokumen resmi yang mengonfirmasi pencabutan tersebut. Klaim beredar melalui pesan berantai tanpa sumber primer yang valid.",
+    "category": "kebijakan",
+    "source": "https://ajiindonesia.or.id/independen.or.id",
+    "generated_at": "2026-10-30"
+  },
+  {
+    "id": 16,
+    "claim": "Dokumen bocor mengungkap anggaran khusus negara dialokasikan untuk membayar buzzer pembuat hoaks terkait pendidikan tinggi.",
+    "status": "hoaks",
+    "summary": "Dokumen yang beredar adalah draf komunikasi publik kementerian, namun narasinya dipintir seolah-olah dialokasikan khusus untuk produksi hoaks.",
+    "category": "sektor",
+    "source": "https://turnbackhoax.id",
+    "generated_at": "2026-10-30"
+  },
+  {
+    "id": 17,
+    "claim": "Viral: warga dipaksa bayar regulasi media sosial dua kali lipat mulai bulan depan.",
+    "status": "hoaks",
+    "summary": "Tidak ada peraturan resmi yang mengatur kenaikan ganda tersebut. Gambar yang digunakan sebagai bukti adalah hasil editan.",
+    "category": "kebijakan",
+    "source": "https://kominfo.go.id/content/detail",
+    "generated_at": "2026-10-30"
+  },
+  {
+    "id": 18,
+    "claim": "Pemerintah secara resmi merekrut influencer dan buzzer untuk membungkam kritik publik di ruang digital.",
+    "status": "hoaks",
+    "summary": "Pemerintah menegaskan kerja sama dengan influencer murni dilakukan untuk sosialisasi program pembangunan, bukan untuk membungkam kritik.",
+    "category": "isu",
+    "source": "https://cekfakta.tempo.co",
+    "generated_at": "2026-10-30"
+  },
+  {
+    "id": 19,
+    "claim": "Buzzer sengaja memelintir data statistik sektor layanan kesehatan untuk menutupi evaluasi kinerja program.",
+    "status": "disinformasi",
+    "summary": "Data yang dipaparkan lembaga resmi telah melalui audit independen, namun klaim yang beredar di media sosial menggunakan pemotongan grafik yang menyesatkan.",
+    "category": "sektor",
+    "source": "https://liputan6.com/cek-fakta",
+    "generated_at": "2026-10-30"
+  },
+  {
+    "id": 20,
+    "claim": "Laporan internal anggaran pendidikan sengaja disembunyikan karena merugikan partai berkuasa menjelang pemilu.",
+    "status": "disinformasi",
+    "summary": "Laporan tersebut tersedia publik di situs resmi lembaga terkait. Narasi 'disembunyikan' dibuat untuk memancing ketidakpercayaan terhadap institusi.",
+    "category": "isu",
+    "source": "https://ajiindonesia.or.id/independen.or.id",
+    "generated_at": "2026-10-30"
+  },
+  {
+    "id": 21,
+    "claim": "Data subsidi BBM yang dirilis pemerintah sengaja dimanipulasi agar terlihat sukses sebelum pilkada.",
+    "status": "disinformasi",
+    "summary": "Metodologi pengumpulan data mengikuti standar BPS. Klaim manipulasi muncul dari akun anonim tanpa bukti metodologis.",
+    "category": "kebijakan",
+    "source": "https://turnbackhoax.id",
+    "generated_at": "2026-10-30"
+  },
+  {
+    "id": 22,
+    "claim": "Jaringan buzzer terkoordinasi menyebarkan narasi palsu soal ketenagakerjaan dengan pola unggahan identik di ratusan akun.",
+    "status": "disinformasi",
+    "summary": "Analisis CIB (Coordinated Inauthentic Behavior) oleh peneliti independen mengonfirmasi pola koordinasi, namun konten dasar mengandung fakta yang diputarbalikkan.",
+    "category": "sektor",
+    "source": "https://kominfo.go.id/content/detail",
+    "generated_at": "2026-10-30"
+  },
+  {
+    "id": 23,
+    "claim": "Trending topik media sosial mengenai krisis pangan global disetel sepenuhnya oleh jaringan buzzer pesanan kelompok politik.",
+    "status": "sebagian benar",
+    "summary": "Analisis media sosial mendeteksi lonjakan aktivitas akun terkoordinasi (CIB), namun tidak seluruhnya berasal dari satu pesanan tunggal.",
+    "category": "isu",
+    "source": "https://cekfakta.tempo.co",
+    "generated_at": "2026-10-30"
+  },
+  {
+    "id": 24,
+    "claim": "subsidi BBM memang naik, namun kenaikannya disebut jauh lebih besar dari kenyataan yang berlaku.",
+    "status": "sebagian benar",
+    "summary": "Kenaikan memang terjadi sesuai regulasi yang berlaku, namun angka yang viral dalam narasi tersebut dilebih-lebihkan hingga tiga kali lipat.",
+    "category": "kebijakan",
+    "source": "https://liputan6.com/cek-fakta",
+    "generated_at": "2026-10-30"
+  },
+  {
+    "id": 25,
+    "claim": "Anggaran sektor layanan kesehatan memang dipotong, tetapi bukan untuk keperluan kampanye seperti yang diklaim.",
+    "status": "sebagian benar",
+    "summary": "Pemotongan anggaran memang terjadi akibat efisiensi fiskal, namun klaim bahwa dana dialihkan ke keperluan kampanye tidak didukung bukti apapun.",
+    "category": "sektor",
+    "source": "https://ajiindonesia.or.id/independen.or.id",
+    "generated_at": "2026-10-30"
+  },
+  {
+    "id": 26,
+    "claim": "Pemerintah resmi mengumumkan subsidi BBM berlaku mulai kuartal berikutnya melalui Peraturan Presiden.",
+    "status": "benar",
+    "summary": "Peraturan Presiden telah diterbitkan dan dapat diakses di lembaran negara. Tidak ditemukan unsur manipulasi dalam penyebaran informasi ini.",
+    "category": "kebijakan",
+    "source": "https://turnbackhoax.id",
+    "generated_at": "2026-10-30"
+  },
+  {
+    "id": 27,
+    "claim": "Lembaga independen mengkonfirmasi adanya jaringan disinformasi terkait kebebasan berpendapat dengan bukti forensik digital.",
+    "status": "benar",
+    "summary": "Laporan lengkap tersedia dengan metodologi terbuka. Temuan divalidasi oleh tiga lembaga riset berbeda secara independen.",
+    "category": "isu",
+    "source": "https://kominfo.go.id/content/detail",
+    "generated_at": "2026-10-30"
+  },
+  {
+    "id": 28,
+    "claim": "Indeks kualitas sektor sumber daya alam meningkat berdasarkan laporan tahunan BPS yang dipublikasikan secara transparan.",
+    "status": "benar",
+    "summary": "Data BPS tersedia di portal resmi dengan metodologi yang dapat diverifikasi publik. Tidak ada indikasi manipulasi narasi dalam penyebaran informasi ini.",
+    "category": "sektor",
+    "source": "https://cekfakta.tempo.co",
+    "generated_at": "2026-10-30"
+  },
+  {
+    "id": 29,
+    "claim": "Pemerintah diam-diam mencabut kebijakan energi nasional tanpa sepengetahuan DPR.",
+    "status": "hoaks",
+    "summary": "Tidak ada dokumen resmi yang mengonfirmasi pencabutan tersebut. Klaim beredar melalui pesan berantai tanpa sumber primer yang valid.",
+    "category": "kebijakan",
+    "source": "https://liputan6.com/cek-fakta",
+    "generated_at": "2026-10-30"
+  },
+  {
+    "id": 30,
+    "claim": "Dokumen bocor mengungkap anggaran khusus negara dialokasikan untuk membayar buzzer pembuat hoaks terkait ketenagakerjaan.",
+    "status": "hoaks",
+    "summary": "Dokumen yang beredar adalah draf komunikasi publik kementerian, namun narasinya dipintir seolah-olah dialokasikan khusus untuk produksi hoaks.",
+    "category": "sektor",
+    "source": "https://ajiindonesia.or.id/independen.or.id",
+    "generated_at": "2026-10-30"
+  },
+  {
+    "id": 31,
+    "claim": "Viral: warga dipaksa bayar kebijakan impor pangan dua kali lipat mulai bulan depan.",
+    "status": "hoaks",
+    "summary": "Tidak ada peraturan resmi yang mengatur kenaikan ganda tersebut. Gambar yang digunakan sebagai bukti adalah hasil editan.",
+    "category": "kebijakan",
+    "source": "https://turnbackhoax.id",
+    "generated_at": "2026-10-30"
+  },
+  {
+    "id": 32,
+    "claim": "Pemerintah secara resmi merekrut influencer dan buzzer untuk membungkam kritik publik di ruang digital.",
+    "status": "hoaks",
+    "summary": "Pemerintah menegaskan kerja sama dengan influencer murni dilakukan untuk sosialisasi program pembangunan, bukan untuk membungkam kritik.",
+    "category": "isu",
+    "source": "https://kominfo.go.id/content/detail",
+    "generated_at": "2026-10-30"
+  },
+  {
+    "id": 33,
+    "claim": "Buzzer sengaja memelintir data statistik sektor pariwisata untuk menutupi evaluasi kinerja program.",
+    "status": "disinformasi",
+    "summary": "Data yang dipaparkan lembaga resmi telah melalui audit independen, namun klaim yang beredar di media sosial menggunakan pemotongan grafik yang menyesatkan.",
+    "category": "sektor",
+    "source": "https://cekfakta.tempo.co",
+    "generated_at": "2026-10-30"
+  },
+  {
+    "id": 34,
+    "claim": "Laporan internal isu tenaga kerja asing sengaja disembunyikan karena merugikan partai berkuasa menjelang pemilu.",
+    "status": "disinformasi",
+    "summary": "Laporan tersebut tersedia publik di situs resmi lembaga terkait. Narasi 'disembunyikan' dibuat untuk memancing ketidakpercayaan terhadap institusi.",
+    "category": "isu",
+    "source": "https://liputan6.com/cek-fakta",
+    "generated_at": "2026-10-30"
+  },
+  {
+    "id": 35,
+    "claim": "Data program beasiswa nasional yang dirilis pemerintah sengaja dimanipulasi agar terlihat sukses sebelum pilkada.",
+    "status": "disinformasi",
+    "summary": "Metodologi pengumpulan data mengikuti standar BPS. Klaim manipulasi muncul dari akun anonim tanpa bukti metodologis.",
+    "category": "kebijakan",
+    "source": "https://ajiindonesia.or.id/independen.or.id",
+    "generated_at": "2026-10-30"
+  },
+  {
+    "id": 36,
+    "claim": "Jaringan buzzer terkoordinasi menyebarkan narasi palsu soal energi terbarukan dengan pola unggahan identik di ratusan akun.",
+    "status": "disinformasi",
+    "summary": "Analisis CIB (Coordinated Inauthentic Behavior) oleh peneliti independen mengonfirmasi pola koordinasi, namun konten dasar mengandung fakta yang diputarbalikkan.",
+    "category": "sektor",
+    "source": "https://turnbackhoax.id",
+    "generated_at": "2026-10-30"
+  },
+  {
+    "id": 37,
+    "claim": "Trending topik media sosial mengenai isu tenaga kerja asing disetel sepenuhnya oleh jaringan buzzer pesanan kelompok politik.",
+    "status": "sebagian benar",
+    "summary": "Analisis media sosial mendeteksi lonjakan aktivitas akun terkoordinasi (CIB), namun tidak seluruhnya berasal dari satu pesanan tunggal.",
+    "category": "isu",
+    "source": "https://kominfo.go.id/content/detail",
+    "generated_at": "2026-10-30"
+  },
+  {
+    "id": 38,
+    "claim": "regulasi media sosial memang naik, namun kenaikannya disebut jauh lebih besar dari kenyataan yang berlaku.",
+    "status": "sebagian benar",
+    "summary": "Kenaikan memang terjadi sesuai regulasi yang berlaku, namun angka yang viral dalam narasi tersebut dilebih-lebihkan hingga tiga kali lipat.",
+    "category": "kebijakan",
+    "source": "https://cekfakta.tempo.co",
+    "generated_at": "2026-10-30"
+  },
+  {
+    "id": 39,
+    "claim": "Anggaran sektor ketahanan pangan memang dipotong, tetapi bukan untuk keperluan kampanye seperti yang diklaim.",
+    "status": "sebagian benar",
+    "summary": "Pemotongan anggaran memang terjadi akibat efisiensi fiskal, namun klaim bahwa dana dialihkan ke keperluan kampanye tidak didukung bukti apapun.",
+    "category": "sektor",
+    "source": "https://liputan6.com/cek-fakta",
+    "generated_at": "2026-10-30"
+  },
+  {
+    "id": 40,
+    "claim": "Pemerintah resmi mengumumkan subsidi BBM berlaku mulai kuartal berikutnya melalui Peraturan Presiden.",
+    "status": "benar",
+    "summary": "Peraturan Presiden telah diterbitkan dan dapat diakses di lembaran negara. Tidak ditemukan unsur manipulasi dalam penyebaran informasi ini.",
+    "category": "kebijakan",
+    "source": "https://ajiindonesia.or.id/independen.or.id",
+    "generated_at": "2026-10-30"
+  },
+  {
+    "id": 41,
+    "claim": "Lembaga independen mengkonfirmasi adanya jaringan disinformasi terkait krisis pangan global dengan bukti forensik digital.",
+    "status": "benar",
+    "summary": "Laporan lengkap tersedia dengan metodologi terbuka. Temuan divalidasi oleh tiga lembaga riset berbeda secara independen.",
+    "category": "isu",
+    "source": "https://turnbackhoax.id",
+    "generated_at": "2026-10-30"
+  },
+  {
+    "id": 42,
+    "claim": "Indeks kualitas sektor sumber daya alam meningkat berdasarkan laporan tahunan BPS yang dipublikasikan secara transparan.",
+    "status": "benar",
+    "summary": "Data BPS tersedia di portal resmi dengan metodologi yang dapat diverifikasi publik. Tidak ada indikasi manipulasi narasi dalam penyebaran informasi ini.",
+    "category": "sektor",
+    "source": "https://kominfo.go.id/content/detail",
+    "generated_at": "2026-10-30"
+  },
+  {
+    "id": 43,
+    "claim": "Pemerintah diam-diam mencabut regulasi media sosial tanpa sepengetahuan DPR.",
+    "status": "hoaks",
+    "summary": "Tidak ada dokumen resmi yang mengonfirmasi pencabutan tersebut. Klaim beredar melalui pesan berantai tanpa sumber primer yang valid.",
+    "category": "kebijakan",
+    "source": "https://cekfakta.tempo.co",
+    "generated_at": "2026-10-30"
+  },
+  {
+    "id": 44,
+    "claim": "Dokumen bocor mengungkap anggaran khusus negara dialokasikan untuk membayar buzzer pembuat hoaks terkait infrastruktur digital.",
+    "status": "hoaks",
+    "summary": "Dokumen yang beredar adalah draf komunikasi publik kementerian, namun narasinya dipintir seolah-olah dialokasikan khusus untuk produksi hoaks.",
+    "category": "sektor",
+    "source": "https://liputan6.com/cek-fakta",
+    "generated_at": "2026-10-30"
+  },
+  {
+    "id": 45,
+    "claim": "Viral: warga dipaksa bayar subsidi BBM dua kali lipat mulai bulan depan.",
+    "status": "hoaks",
+    "summary": "Tidak ada peraturan resmi yang mengatur kenaikan ganda tersebut. Gambar yang digunakan sebagai bukti adalah hasil editan.",
+    "category": "kebijakan",
+    "source": "https://ajiindonesia.or.id/independen.or.id",
+    "generated_at": "2026-10-30"
+  },
+  {
+    "id": 46,
+    "claim": "Pemerintah secara resmi merekrut influencer dan buzzer untuk membungkam kritik publik di ruang digital.",
+    "status": "hoaks",
+    "summary": "Pemerintah menegaskan kerja sama dengan influencer murni dilakukan untuk sosialisasi program pembangunan, bukan untuk membungkam kritik.",
+    "category": "isu",
+    "source": "https://turnbackhoax.id",
+    "generated_at": "2026-10-30"
+  },
+  {
+    "id": 47,
+    "claim": "Buzzer sengaja memelintir data statistik sektor sumber daya alam untuk menutupi evaluasi kinerja program.",
+    "status": "disinformasi",
+    "summary": "Data yang dipaparkan lembaga resmi telah melalui audit independen, namun klaim yang beredar di media sosial menggunakan pemotongan grafik yang menyesatkan.",
+    "category": "sektor",
+    "source": "https://kominfo.go.id/content/detail",
+    "generated_at": "2026-10-30"
+  },
+  {
+    "id": 48,
+    "claim": "Laporan internal krisis pangan global sengaja disembunyikan karena merugikan partai berkuasa menjelang pemilu.",
+    "status": "disinformasi",
+    "summary": "Laporan tersebut tersedia publik di situs resmi lembaga terkait. Narasi 'disembunyikan' dibuat untuk memancing ketidakpercayaan terhadap institusi.",
+    "category": "isu",
+    "source": "https://cekfakta.tempo.co",
+    "generated_at": "2026-10-30"
+  },
+  {
+    "id": 49,
+    "claim": "Data regulasi media sosial yang dirilis pemerintah sengaja dimanipulasi agar terlihat sukses sebelum pilkada.",
+    "status": "disinformasi",
+    "summary": "Metodologi pengumpulan data mengikuti standar BPS. Klaim manipulasi muncul dari akun anonim tanpa bukti metodologis.",
+    "category": "kebijakan",
+    "source": "https://liputan6.com/cek-fakta",
+    "generated_at": "2026-10-30"
+  },
+  {
+    "id": 50,
+    "claim": "Jaringan buzzer terkoordinasi menyebarkan narasi palsu soal ketahanan pangan dengan pola unggahan identik di ratusan akun.",
+    "status": "disinformasi",
+    "summary": "Analisis CIB (Coordinated Inauthentic Behavior) oleh peneliti independen mengonfirmasi pola koordinasi, namun konten dasar mengandung fakta yang diputarbalikkan.",
+    "category": "sektor",
+    "source": "https://ajiindonesia.or.id/independen.or.id",
+    "generated_at": "2026-10-30"
+  },
+  {
+    "id": 51,
+    "claim": "Trending topik media sosial mengenai reformasi belanja negara disetel sepenuhnya oleh jaringan buzzer pesanan kelompok politik.",
+    "status": "sebagian benar",
+    "summary": "Analisis media sosial mendeteksi lonjakan aktivitas akun terkoordinasi (CIB), namun tidak seluruhnya berasal dari satu pesanan tunggal.",
+    "category": "isu",
+    "source": "https://turnbackhoax.id",
+    "generated_at": "2026-10-30"
+  },
+  {
+    "id": 52,
+    "claim": "program beasiswa nasional memang naik, namun kenaikannya disebut jauh lebih besar dari kenyataan yang berlaku.",
+    "status": "sebagian benar",
+    "summary": "Kenaikan memang terjadi sesuai regulasi yang berlaku, namun angka yang viral dalam narasi tersebut dilebih-lebihkan hingga tiga kali lipat.",
+    "category": "kebijakan",
+    "source": "https://kominfo.go.id/content/detail",
+    "generated_at": "2026-10-30"
+  },
+  {
+    "id": 53,
+    "claim": "Anggaran sektor pertanian memang dipotong, tetapi bukan untuk keperluan kampanye seperti yang diklaim.",
+    "status": "sebagian benar",
+    "summary": "Pemotongan anggaran memang terjadi akibat efisiensi fiskal, namun klaim bahwa dana dialihkan ke keperluan kampanye tidak didukung bukti apapun.",
+    "category": "sektor",
+    "source": "https://cekfakta.tempo.co",
+    "generated_at": "2026-10-30"
+  },
+  {
+    "id": 54,
+    "claim": "Pemerintah resmi mengumumkan regulasi digital baru berlaku mulai kuartal berikutnya melalui Peraturan Presiden.",
+    "status": "benar",
+    "summary": "Peraturan Presiden telah diterbitkan dan dapat diakses di lembaran negara. Tidak ditemukan unsur manipulasi dalam penyebaran informasi ini.",
+    "category": "kebijakan",
+    "source": "https://liputan6.com/cek-fakta",
+    "generated_at": "2026-10-30"
+  },
+  {
+    "id": 55,
+    "claim": "Lembaga independen mengkonfirmasi adanya jaringan disinformasi terkait kebebasan berpendapat dengan bukti forensik digital.",
+    "status": "benar",
+    "summary": "Laporan lengkap tersedia dengan metodologi terbuka. Temuan divalidasi oleh tiga lembaga riset berbeda secara independen.",
+    "category": "isu",
+    "source": "https://ajiindonesia.or.id/independen.or.id",
+    "generated_at": "2026-10-30"
+  },
+  {
+    "id": 56,
+    "claim": "Indeks kualitas sektor energi terbarukan meningkat berdasarkan laporan tahunan BPS yang dipublikasikan secara transparan.",
+    "status": "benar",
+    "summary": "Data BPS tersedia di portal resmi dengan metodologi yang dapat diverifikasi publik. Tidak ada indikasi manipulasi narasi dalam penyebaran informasi ini.",
+    "category": "sektor",
+    "source": "https://turnbackhoax.id",
+    "generated_at": "2026-10-30"
+  },
+  {
+    "id": 57,
+    "claim": "Pemerintah diam-diam mencabut kebijakan impor pangan tanpa sepengetahuan DPR.",
+    "status": "hoaks",
+    "summary": "Tidak ada dokumen resmi yang mengonfirmasi pencabutan tersebut. Klaim beredar melalui pesan berantai tanpa sumber primer yang valid.",
+    "category": "kebijakan",
+    "source": "https://kominfo.go.id/content/detail",
+    "generated_at": "2026-10-30"
+  },
+  {
+    "id": 58,
+    "claim": "Dokumen bocor mengungkap anggaran khusus negara dialokasikan untuk membayar buzzer pembuat hoaks terkait ketahanan pangan.",
+    "status": "hoaks",
+    "summary": "Dokumen yang beredar adalah draf komunikasi publik kementerian, namun narasinya dipintir seolah-olah dialokasikan khusus untuk produksi hoaks.",
+    "category": "sektor",
+    "source": "https://cekfakta.tempo.co",
+    "generated_at": "2026-10-30"
+  },
+  {
+    "id": 59,
+    "claim": "Viral: warga dipaksa bayar proyek infrastruktur strategis dua kali lipat mulai bulan depan.",
+    "status": "hoaks",
+    "summary": "Tidak ada peraturan resmi yang mengatur kenaikan ganda tersebut. Gambar yang digunakan sebagai bukti adalah hasil editan.",
+    "category": "kebijakan",
+    "source": "https://liputan6.com/cek-fakta",
+    "generated_at": "2026-10-30"
+  },
+  {
+    "id": 60,
+    "claim": "Pemerintah secara resmi merekrut influencer dan buzzer untuk membungkam kritik publik di ruang digital.",
+    "status": "hoaks",
+    "summary": "Pemerintah menegaskan kerja sama dengan influencer murni dilakukan untuk sosialisasi program pembangunan, bukan untuk membungkam kritik.",
+    "category": "isu",
+    "source": "https://ajiindonesia.or.id/independen.or.id",
+    "generated_at": "2026-10-30"
+  },
+  {
+    "id": 61,
+    "claim": "Buzzer sengaja memelintir data statistik sektor pendidikan tinggi untuk menutupi evaluasi kinerja program.",
+    "status": "disinformasi",
+    "summary": "Data yang dipaparkan lembaga resmi telah melalui audit independen, namun klaim yang beredar di media sosial menggunakan pemotongan grafik yang menyesatkan.",
+    "category": "sektor",
+    "source": "https://turnbackhoax.id",
+    "generated_at": "2026-10-30"
+  },
+  {
+    "id": 62,
+    "claim": "Laporan internal isu tenaga kerja asing sengaja disembunyikan karena merugikan partai berkuasa menjelang pemilu.",
+    "status": "disinformasi",
+    "summary": "Laporan tersebut tersedia publik di situs resmi lembaga terkait. Narasi 'disembunyikan' dibuat untuk memancing ketidakpercayaan terhadap institusi.",
+    "category": "isu",
+    "source": "https://kominfo.go.id/content/detail",
+    "generated_at": "2026-10-30"
+  },
+  {
+    "id": 63,
+    "claim": "Data kebijakan impor pangan yang dirilis pemerintah sengaja dimanipulasi agar terlihat sukses sebelum pilkada.",
+    "status": "disinformasi",
+    "summary": "Metodologi pengumpulan data mengikuti standar BPS. Klaim manipulasi muncul dari akun anonim tanpa bukti metodologis.",
+    "category": "kebijakan",
+    "source": "https://cekfakta.tempo.co",
+    "generated_at": "2026-10-30"
+  },
+  {
+    "id": 64,
+    "claim": "Jaringan buzzer terkoordinasi menyebarkan narasi palsu soal pertahanan dan keamanan dengan pola unggahan identik di ratusan akun.",
+    "status": "disinformasi",
+    "summary": "Analisis CIB (Coordinated Inauthentic Behavior) oleh peneliti independen mengonfirmasi pola koordinasi, namun konten dasar mengandung fakta yang diputarbalikkan.",
+    "category": "sektor",
+    "source": "https://liputan6.com/cek-fakta",
+    "generated_at": "2026-10-30"
+  },
+  {
+    "id": 65,
+    "claim": "Trending topik media sosial mengenai privatisasi BUMN disetel sepenuhnya oleh jaringan buzzer pesanan kelompok politik.",
+    "status": "sebagian benar",
+    "summary": "Analisis media sosial mendeteksi lonjakan aktivitas akun terkoordinasi (CIB), namun tidak seluruhnya berasal dari satu pesanan tunggal.",
+    "category": "isu",
+    "source": "https://ajiindonesia.or.id/independen.or.id",
+    "generated_at": "2026-10-30"
+  },
+  {
+    "id": 66,
+    "claim": "kebijakan upah minimum memang naik, namun kenaikannya disebut jauh lebih besar dari kenyataan yang berlaku.",
+    "status": "sebagian benar",
+    "summary": "Kenaikan memang terjadi sesuai regulasi yang berlaku, namun angka yang viral dalam narasi tersebut dilebih-lebihkan hingga tiga kali lipat.",
+    "category": "kebijakan",
+    "source": "https://turnbackhoax.id",
+    "generated_at": "2026-10-30"
+  },
+  {
+    "id": 67,
+    "claim": "Anggaran sektor sumber daya alam memang dipotong, tetapi bukan untuk keperluan kampanye seperti yang diklaim.",
+    "status": "sebagian benar",
+    "summary": "Pemotongan anggaran memang terjadi akibat efisiensi fiskal, namun klaim bahwa dana dialihkan ke keperluan kampanye tidak didukung bukti apapun.",
+    "category": "sektor",
+    "source": "https://kominfo.go.id/content/detail",
+    "generated_at": "2026-10-30"
+  },
+  {
+    "id": 68,
+    "claim": "Pemerintah resmi mengumumkan kenaikan tarif pajak berlaku mulai kuartal berikutnya melalui Peraturan Presiden.",
+    "status": "benar",
+    "summary": "Peraturan Presiden telah diterbitkan dan dapat diakses di lembaran negara. Tidak ditemukan unsur manipulasi dalam penyebaran informasi ini.",
+    "category": "kebijakan",
+    "source": "https://cekfakta.tempo.co",
+    "generated_at": "2026-10-30"
+  },
+  {
+    "id": 69,
+    "claim": "Lembaga independen mengkonfirmasi adanya jaringan disinformasi terkait ekonomi domestik dengan bukti forensik digital.",
+    "status": "benar",
+    "summary": "Laporan lengkap tersedia dengan metodologi terbuka. Temuan divalidasi oleh tiga lembaga riset berbeda secara independen.",
+    "category": "isu",
+    "source": "https://liputan6.com/cek-fakta",
+    "generated_at": "2026-10-30"
+  },
+  {
+    "id": 70,
+    "claim": "Indeks kualitas sektor pendidikan tinggi meningkat berdasarkan laporan tahunan BPS yang dipublikasikan secara transparan.",
+    "status": "benar",
+    "summary": "Data BPS tersedia di portal resmi dengan metodologi yang dapat diverifikasi publik. Tidak ada indikasi manipulasi narasi dalam penyebaran informasi ini.",
+    "category": "sektor",
+    "source": "https://ajiindonesia.or.id/independen.or.id",
+    "generated_at": "2026-10-30"
+  },
+  {
+    "id": 71,
+    "claim": "Pemerintah diam-diam mencabut kenaikan tarif pajak tanpa sepengetahuan DPR.",
+    "status": "hoaks",
+    "summary": "Tidak ada dokumen resmi yang mengonfirmasi pencabutan tersebut. Klaim beredar melalui pesan berantai tanpa sumber primer yang valid.",
+    "category": "kebijakan",
+    "source": "https://turnbackhoax.id",
+    "generated_at": "2026-10-30"
+  },
+  {
+    "id": 72,
+    "claim": "Dokumen bocor mengungkap anggaran khusus negara dialokasikan untuk membayar buzzer pembuat hoaks terkait ketenagakerjaan.",
+    "status": "hoaks",
+    "summary": "Dokumen yang beredar adalah draf komunikasi publik kementerian, namun narasinya dipintir seolah-olah dialokasikan khusus untuk produksi hoaks.",
+    "category": "sektor",
+    "source": "https://kominfo.go.id/content/detail",
+    "generated_at": "2026-10-30"
+  },
+  {
+    "id": 73,
+    "claim": "Viral: warga dipaksa bayar subsidi BBM dua kali lipat mulai bulan depan.",
+    "status": "hoaks",
+    "summary": "Tidak ada peraturan resmi yang mengatur kenaikan ganda tersebut. Gambar yang digunakan sebagai bukti adalah hasil editan.",
+    "category": "kebijakan",
+    "source": "https://cekfakta.tempo.co",
+    "generated_at": "2026-10-30"
+  },
+  {
+    "id": 74,
+    "claim": "Pemerintah secara resmi merekrut influencer dan buzzer untuk membungkam kritik publik di ruang digital.",
+    "status": "hoaks",
+    "summary": "Pemerintah menegaskan kerja sama dengan influencer murni dilakukan untuk sosialisasi program pembangunan, bukan untuk membungkam kritik.",
+    "category": "isu",
+    "source": "https://liputan6.com/cek-fakta",
+    "generated_at": "2026-10-30"
+  },
+  {
+    "id": 75,
+    "claim": "Buzzer sengaja memelintir data statistik sektor pertahanan dan keamanan untuk menutupi evaluasi kinerja program.",
+    "status": "disinformasi",
+    "summary": "Data yang dipaparkan lembaga resmi telah melalui audit independen, namun klaim yang beredar di media sosial menggunakan pemotongan grafik yang menyesatkan.",
+    "category": "sektor",
+    "source": "https://ajiindonesia.or.id/independen.or.id",
+    "generated_at": "2026-10-30"
+  },
+  {
+    "id": 76,
+    "claim": "Laporan internal isu tenaga kerja asing sengaja disembunyikan karena merugikan partai berkuasa menjelang pemilu.",
+    "status": "disinformasi",
+    "summary": "Laporan tersebut tersedia publik di situs resmi lembaga terkait. Narasi 'disembunyikan' dibuat untuk memancing ketidakpercayaan terhadap institusi.",
+    "category": "isu",
+    "source": "https://turnbackhoax.id",
+    "generated_at": "2026-10-30"
+  },
+  {
+    "id": 77,
+    "claim": "Data regulasi media sosial yang dirilis pemerintah sengaja dimanipulasi agar terlihat sukses sebelum pilkada.",
+    "status": "disinformasi",
+    "summary": "Metodologi pengumpulan data mengikuti standar BPS. Klaim manipulasi muncul dari akun anonim tanpa bukti metodologis.",
+    "category": "kebijakan",
+    "source": "https://kominfo.go.id/content/detail",
+    "generated_at": "2026-10-30"
+  },
+  {
+    "id": 78,
+    "claim": "Jaringan buzzer terkoordinasi menyebarkan narasi palsu soal pendidikan tinggi dengan pola unggahan identik di ratusan akun.",
+    "status": "disinformasi",
+    "summary": "Analisis CIB (Coordinated Inauthentic Behavior) oleh peneliti independen mengonfirmasi pola koordinasi, namun konten dasar mengandung fakta yang diputarbalikkan.",
+    "category": "sektor",
+    "source": "https://cekfakta.tempo.co",
+    "generated_at": "2026-10-30"
+  },
+  {
+    "id": 79,
+    "claim": "Trending topik media sosial mengenai keamanan siber nasional disetel sepenuhnya oleh jaringan buzzer pesanan kelompok politik.",
+    "status": "sebagian benar",
+    "summary": "Analisis media sosial mendeteksi lonjakan aktivitas akun terkoordinasi (CIB), namun tidak seluruhnya berasal dari satu pesanan tunggal.",
+    "category": "isu",
+    "source": "https://liputan6.com/cek-fakta",
+    "generated_at": "2026-10-30"
+  },
+  {
+    "id": 80,
+    "claim": "program beasiswa nasional memang naik, namun kenaikannya disebut jauh lebih besar dari kenyataan yang berlaku.",
+    "status": "sebagian benar",
+    "summary": "Kenaikan memang terjadi sesuai regulasi yang berlaku, namun angka yang viral dalam narasi tersebut dilebih-lebihkan hingga tiga kali lipat.",
+    "category": "kebijakan",
+    "source": "https://ajiindonesia.or.id/independen.or.id",
+    "generated_at": "2026-10-30"
+  },
+  {
+    "id": 81,
+    "claim": "Anggaran sektor layanan kesehatan memang dipotong, tetapi bukan untuk keperluan kampanye seperti yang diklaim.",
+    "status": "sebagian benar",
+    "summary": "Pemotongan anggaran memang terjadi akibat efisiensi fiskal, namun klaim bahwa dana dialihkan ke keperluan kampanye tidak didukung bukti apapun.",
+    "category": "sektor",
+    "source": "https://turnbackhoax.id",
+    "generated_at": "2026-10-30"
+  },
+  {
+    "id": 82,
+    "claim": "Pemerintah resmi mengumumkan penghapusan kartu prakerja berlaku mulai kuartal berikutnya melalui Peraturan Presiden.",
+    "status": "benar",
+    "summary": "Peraturan Presiden telah diterbitkan dan dapat diakses di lembaran negara. Tidak ditemukan unsur manipulasi dalam penyebaran informasi ini.",
+    "category": "kebijakan",
+    "source": "https://kominfo.go.id/content/detail",
+    "generated_at": "2026-10-30"
+  },
+  {
+    "id": 83,
+    "claim": "Lembaga independen mengkonfirmasi adanya jaringan disinformasi terkait keamanan siber nasional dengan bukti forensik digital.",
+    "status": "benar",
+    "summary": "Laporan lengkap tersedia dengan metodologi terbuka. Temuan divalidasi oleh tiga lembaga riset berbeda secara independen.",
+    "category": "isu",
+    "source": "https://cekfakta.tempo.co",
+    "generated_at": "2026-10-30"
+  },
+  {
+    "id": 84,
+    "claim": "Indeks kualitas sektor layanan kesehatan meningkat berdasarkan laporan tahunan BPS yang dipublikasikan secara transparan.",
+    "status": "benar",
+    "summary": "Data BPS tersedia di portal resmi dengan metodologi yang dapat diverifikasi publik. Tidak ada indikasi manipulasi narasi dalam penyebaran informasi ini.",
+    "category": "sektor",
+    "source": "https://liputan6.com/cek-fakta",
+    "generated_at": "2026-10-30"
+  },
+  {
+    "id": 85,
+    "claim": "Pemerintah diam-diam mencabut proyek infrastruktur strategis tanpa sepengetahuan DPR.",
+    "status": "hoaks",
+    "summary": "Tidak ada dokumen resmi yang mengonfirmasi pencabutan tersebut. Klaim beredar melalui pesan berantai tanpa sumber primer yang valid.",
+    "category": "kebijakan",
+    "source": "https://ajiindonesia.or.id/independen.or.id",
+    "generated_at": "2026-10-30"
+  },
+  {
+    "id": 86,
+    "claim": "Dokumen bocor mengungkap anggaran khusus negara dialokasikan untuk membayar buzzer pembuat hoaks terkait infrastruktur digital.",
+    "status": "hoaks",
+    "summary": "Dokumen yang beredar adalah draf komunikasi publik kementerian, namun narasinya dipintir seolah-olah dialokasikan khusus untuk produksi hoaks.",
+    "category": "sektor",
+    "source": "https://turnbackhoax.id",
+    "generated_at": "2026-10-30"
+  },
+  {
+    "id": 87,
+    "claim": "Viral: warga dipaksa bayar program beasiswa nasional dua kali lipat mulai bulan depan.",
+    "status": "hoaks",
+    "summary": "Tidak ada peraturan resmi yang mengatur kenaikan ganda tersebut. Gambar yang digunakan sebagai bukti adalah hasil editan.",
+    "category": "kebijakan",
+    "source": "https://kominfo.go.id/content/detail",
+    "generated_at": "2026-10-30"
+  },
+  {
+    "id": 88,
+    "claim": "Pemerintah secara resmi merekrut influencer dan buzzer untuk membungkam kritik publik di ruang digital.",
+    "status": "hoaks",
+    "summary": "Pemerintah menegaskan kerja sama dengan influencer murni dilakukan untuk sosialisasi program pembangunan, bukan untuk membungkam kritik.",
+    "category": "isu",
+    "source": "https://cekfakta.tempo.co",
+    "generated_at": "2026-10-30"
+  },
+  {
+    "id": 89,
+    "claim": "Buzzer sengaja memelintir data statistik sektor pertanian untuk menutupi evaluasi kinerja program.",
+    "status": "disinformasi",
+    "summary": "Data yang dipaparkan lembaga resmi telah melalui audit independen, namun klaim yang beredar di media sosial menggunakan pemotongan grafik yang menyesatkan.",
+    "category": "sektor",
+    "source": "https://liputan6.com/cek-fakta",
+    "generated_at": "2026-10-30"
+  },
+  {
+    "id": 90,
+    "claim": "Laporan internal reformasi belanja negara sengaja disembunyikan karena merugikan partai berkuasa menjelang pemilu.",
+    "status": "disinformasi",
+    "summary": "Laporan tersebut tersedia publik di situs resmi lembaga terkait. Narasi 'disembunyikan' dibuat untuk memancing ketidakpercayaan terhadap institusi.",
+    "category": "isu",
+    "source": "https://ajiindonesia.or.id/independen.or.id",
+    "generated_at": "2026-10-30"
+  },
+  {
+    "id": 91,
+    "claim": "Data kebijakan impor pangan yang dirilis pemerintah sengaja dimanipulasi agar terlihat sukses sebelum pilkada.",
+    "status": "disinformasi",
+    "summary": "Metodologi pengumpulan data mengikuti standar BPS. Klaim manipulasi muncul dari akun anonim tanpa bukti metodologis.",
+    "category": "kebijakan",
+    "source": "https://turnbackhoax.id",
+    "generated_at": "2026-10-30"
+  },
+  {
+    "id": 92,
+    "claim": "Jaringan buzzer terkoordinasi menyebarkan narasi palsu soal ketenagakerjaan dengan pola unggahan identik di ratusan akun.",
+    "status": "disinformasi",
+    "summary": "Analisis CIB (Coordinated Inauthentic Behavior) oleh peneliti independen mengonfirmasi pola koordinasi, namun konten dasar mengandung fakta yang diputarbalikkan.",
+    "category": "sektor",
+    "source": "https://kominfo.go.id/content/detail",
+    "generated_at": "2026-10-30"
+  },
+  {
+    "id": 93,
+    "claim": "Trending topik media sosial mengenai reformasi belanja negara disetel sepenuhnya oleh jaringan buzzer pesanan kelompok politik.",
+    "status": "sebagian benar",
+    "summary": "Analisis media sosial mendeteksi lonjakan aktivitas akun terkoordinasi (CIB), namun tidak seluruhnya berasal dari satu pesanan tunggal.",
+    "category": "isu",
+    "source": "https://cekfakta.tempo.co",
+    "generated_at": "2026-10-30"
+  },
+  {
+    "id": 94,
+    "claim": "penghapusan kartu prakerja memang naik, namun kenaikannya disebut jauh lebih besar dari kenyataan yang berlaku.",
+    "status": "sebagian benar",
+    "summary": "Kenaikan memang terjadi sesuai regulasi yang berlaku, namun angka yang viral dalam narasi tersebut dilebih-lebihkan hingga tiga kali lipat.",
+    "category": "kebijakan",
+    "source": "https://liputan6.com/cek-fakta",
+    "generated_at": "2026-10-30"
+  },
+  {
+    "id": 95,
+    "claim": "Anggaran sektor sumber daya alam memang dipotong, tetapi bukan untuk keperluan kampanye seperti yang diklaim.",
+    "status": "sebagian benar",
+    "summary": "Pemotongan anggaran memang terjadi akibat efisiensi fiskal, namun klaim bahwa dana dialihkan ke keperluan kampanye tidak didukung bukti apapun.",
+    "category": "sektor",
+    "source": "https://ajiindonesia.or.id/independen.or.id",
+    "generated_at": "2026-10-30"
+  },
+  {
+    "id": 96,
+    "claim": "Pemerintah resmi mengumumkan program beasiswa nasional berlaku mulai kuartal berikutnya melalui Peraturan Presiden.",
+    "status": "benar",
+    "summary": "Peraturan Presiden telah diterbitkan dan dapat diakses di lembaran negara. Tidak ditemukan unsur manipulasi dalam penyebaran informasi ini.",
+    "category": "kebijakan",
+    "source": "https://turnbackhoax.id",
+    "generated_at": "2026-10-30"
+  },
+  {
+    "id": 97,
+    "claim": "Lembaga independen mengkonfirmasi adanya jaringan disinformasi terkait isu tenaga kerja asing dengan bukti forensik digital.",
+    "status": "benar",
+    "summary": "Laporan lengkap tersedia dengan metodologi terbuka. Temuan divalidasi oleh tiga lembaga riset berbeda secara independen.",
+    "category": "isu",
+    "source": "https://kominfo.go.id/content/detail",
+    "generated_at": "2026-10-30"
+  },
+  {
+    "id": 98,
+    "claim": "Indeks kualitas sektor pariwisata meningkat berdasarkan laporan tahunan BPS yang dipublikasikan secara transparan.",
+    "status": "benar",
+    "summary": "Data BPS tersedia di portal resmi dengan metodologi yang dapat diverifikasi publik. Tidak ada indikasi manipulasi narasi dalam penyebaran informasi ini.",
+    "category": "sektor",
+    "source": "https://cekfakta.tempo.co",
+    "generated_at": "2026-10-30"
+  },
+  {
+    "id": 99,
+    "claim": "Pemerintah diam-diam mencabut proyek infrastruktur strategis tanpa sepengetahuan DPR.",
+    "status": "hoaks",
+    "summary": "Tidak ada dokumen resmi yang mengonfirmasi pencabutan tersebut. Klaim beredar melalui pesan berantai tanpa sumber primer yang valid.",
+    "category": "kebijakan",
+    "source": "https://liputan6.com/cek-fakta",
+    "generated_at": "2026-10-30"
+  },
+  {
+    "id": 100,
+    "claim": "Dokumen bocor mengungkap anggaran khusus negara dialokasikan untuk membayar buzzer pembuat hoaks terkait pertanian.",
+    "status": "hoaks",
+    "summary": "Dokumen yang beredar adalah draf komunikasi publik kementerian, namun narasinya dipintir seolah-olah dialokasikan khusus untuk produksi hoaks.",
+    "category": "sektor",
+    "source": "https://ajiindonesia.or.id/independen.or.id",
+    "generated_at": "2026-10-30"
+  },
+  {
+    "id": 101,
+    "claim": "Viral: warga dipaksa bayar kebijakan impor pangan dua kali lipat mulai bulan depan.",
+    "status": "hoaks",
+    "summary": "Tidak ada peraturan resmi yang mengatur kenaikan ganda tersebut. Gambar yang digunakan sebagai bukti adalah hasil editan.",
+    "category": "kebijakan",
+    "source": "https://turnbackhoax.id",
+    "generated_at": "2026-10-30"
+  },
+  {
+    "id": 102,
+    "claim": "Pemerintah secara resmi merekrut influencer dan buzzer untuk membungkam kritik publik di ruang digital.",
+    "status": "hoaks",
+    "summary": "Pemerintah menegaskan kerja sama dengan influencer murni dilakukan untuk sosialisasi program pembangunan, bukan untuk membungkam kritik.",
+    "category": "isu",
+    "source": "https://kominfo.go.id/content/detail",
+    "generated_at": "2026-10-30"
+  },
+  {
+    "id": 103,
+    "claim": "Buzzer sengaja memelintir data statistik sektor energi terbarukan untuk menutupi evaluasi kinerja program.",
+    "status": "disinformasi",
+    "summary": "Data yang dipaparkan lembaga resmi telah melalui audit independen, namun klaim yang beredar di media sosial menggunakan pemotongan grafik yang menyesatkan.",
+    "category": "sektor",
+    "source": "https://cekfakta.tempo.co",
+    "generated_at": "2026-10-30"
+  },
+  {
+    "id": 104,
+    "claim": "Laporan internal pemilihan umum sengaja disembunyikan karena merugikan partai berkuasa menjelang pemilu.",
+    "status": "disinformasi",
+    "summary": "Laporan tersebut tersedia publik di situs resmi lembaga terkait. Narasi 'disembunyikan' dibuat untuk memancing ketidakpercayaan terhadap institusi.",
+    "category": "isu",
+    "source": "https://liputan6.com/cek-fakta",
+    "generated_at": "2026-10-30"
+  },
+  {
+    "id": 105,
+    "claim": "Data kebijakan impor pangan yang dirilis pemerintah sengaja dimanipulasi agar terlihat sukses sebelum pilkada.",
+    "status": "disinformasi",
+    "summary": "Metodologi pengumpulan data mengikuti standar BPS. Klaim manipulasi muncul dari akun anonim tanpa bukti metodologis.",
+    "category": "kebijakan",
+    "source": "https://ajiindonesia.or.id/independen.or.id",
+    "generated_at": "2026-10-30"
+  },
+  {
+    "id": 106,
+    "claim": "Jaringan buzzer terkoordinasi menyebarkan narasi palsu soal energi terbarukan dengan pola unggahan identik di ratusan akun.",
+    "status": "disinformasi",
+    "summary": "Analisis CIB (Coordinated Inauthentic Behavior) oleh peneliti independen mengonfirmasi pola koordinasi, namun konten dasar mengandung fakta yang diputarbalikkan.",
+    "category": "sektor",
+    "source": "https://turnbackhoax.id",
+    "generated_at": "2026-10-30"
+  },
+  {
+    "id": 107,
+    "claim": "Trending topik media sosial mengenai anggaran pendidikan disetel sepenuhnya oleh jaringan buzzer pesanan kelompok politik.",
+    "status": "sebagian benar",
+    "summary": "Analisis media sosial mendeteksi lonjakan aktivitas akun terkoordinasi (CIB), namun tidak seluruhnya berasal dari satu pesanan tunggal.",
+    "category": "isu",
+    "source": "https://kominfo.go.id/content/detail",
+    "generated_at": "2026-10-30"
+  },
+  {
+    "id": 108,
+    "claim": "regulasi media sosial memang naik, namun kenaikannya disebut jauh lebih besar dari kenyataan yang berlaku.",
+    "status": "sebagian benar",
+    "summary": "Kenaikan memang terjadi sesuai regulasi yang berlaku, namun angka yang viral dalam narasi tersebut dilebih-lebihkan hingga tiga kali lipat.",
+    "category": "kebijakan",
+    "source": "https://cekfakta.tempo.co",
+    "generated_at": "2026-10-30"
+  },
+  {
+    "id": 109,
+    "claim": "Anggaran sektor pariwisata memang dipotong, tetapi bukan untuk keperluan kampanye seperti yang diklaim.",
+    "status": "sebagian benar",
+    "summary": "Pemotongan anggaran memang terjadi akibat efisiensi fiskal, namun klaim bahwa dana dialihkan ke keperluan kampanye tidak didukung bukti apapun.",
+    "category": "sektor",
+    "source": "https://liputan6.com/cek-fakta",
+    "generated_at": "2026-10-30"
+  },
+  {
+    "id": 110,
+    "claim": "Pemerintah resmi mengumumkan penghapusan kartu prakerja berlaku mulai kuartal berikutnya melalui Peraturan Presiden.",
+    "status": "benar",
+    "summary": "Peraturan Presiden telah diterbitkan dan dapat diakses di lembaran negara. Tidak ditemukan unsur manipulasi dalam penyebaran informasi ini.",
+    "category": "kebijakan",
+    "source": "https://ajiindonesia.or.id/independen.or.id",
+    "generated_at": "2026-10-30"
+  },
+  {
+    "id": 111,
+    "claim": "Lembaga independen mengkonfirmasi adanya jaringan disinformasi terkait ekonomi domestik dengan bukti forensik digital.",
+    "status": "benar",
+    "summary": "Laporan lengkap tersedia dengan metodologi terbuka. Temuan divalidasi oleh tiga lembaga riset berbeda secara independen.",
+    "category": "isu",
+    "source": "https://turnbackhoax.id",
+    "generated_at": "2026-10-30"
+  },
+  {
+    "id": 112,
+    "claim": "Indeks kualitas sektor energi terbarukan meningkat berdasarkan laporan tahunan BPS yang dipublikasikan secara transparan.",
+    "status": "benar",
+    "summary": "Data BPS tersedia di portal resmi dengan metodologi yang dapat diverifikasi publik. Tidak ada indikasi manipulasi narasi dalam penyebaran informasi ini.",
+    "category": "sektor",
+    "source": "https://kominfo.go.id/content/detail",
+    "generated_at": "2026-10-30"
+  },
+  {
+    "id": 113,
+    "claim": "Pemerintah diam-diam mencabut subsidi BBM tanpa sepengetahuan DPR.",
+    "status": "hoaks",
+    "summary": "Tidak ada dokumen resmi yang mengonfirmasi pencabutan tersebut. Klaim beredar melalui pesan berantai tanpa sumber primer yang valid.",
+    "category": "kebijakan",
+    "source": "https://cekfakta.tempo.co",
+    "generated_at": "2026-10-30"
+  },
+  {
+    "id": 114,
+    "claim": "Dokumen bocor mengungkap anggaran khusus negara dialokasikan untuk membayar buzzer pembuat hoaks terkait pertanian.",
+    "status": "hoaks",
+    "summary": "Dokumen yang beredar adalah draf komunikasi publik kementerian, namun narasinya dipintir seolah-olah dialokasikan khusus untuk produksi hoaks.",
+    "category": "sektor",
+    "source": "https://liputan6.com/cek-fakta",
+    "generated_at": "2026-10-30"
+  },
+  {
+    "id": 115,
+    "claim": "Viral: warga dipaksa bayar kebijakan energi nasional dua kali lipat mulai bulan depan.",
+    "status": "hoaks",
+    "summary": "Tidak ada peraturan resmi yang mengatur kenaikan ganda tersebut. Gambar yang digunakan sebagai bukti adalah hasil editan.",
+    "category": "kebijakan",
+    "source": "https://ajiindonesia.or.id/independen.or.id",
+    "generated_at": "2026-10-30"
+  },
+  {
+    "id": 116,
+    "claim": "Pemerintah secara resmi merekrut influencer dan buzzer untuk membungkam kritik publik di ruang digital.",
+    "status": "hoaks",
+    "summary": "Pemerintah menegaskan kerja sama dengan influencer murni dilakukan untuk sosialisasi program pembangunan, bukan untuk membungkam kritik.",
+    "category": "isu",
+    "source": "https://turnbackhoax.id",
+    "generated_at": "2026-10-30"
+  },
+  {
+    "id": 117,
+    "claim": "Buzzer sengaja memelintir data statistik sektor pertahanan dan keamanan untuk menutupi evaluasi kinerja program.",
+    "status": "disinformasi",
+    "summary": "Data yang dipaparkan lembaga resmi telah melalui audit independen, namun klaim yang beredar di media sosial menggunakan pemotongan grafik yang menyesatkan.",
+    "category": "sektor",
+    "source": "https://kominfo.go.id/content/detail",
+    "generated_at": "2026-10-30"
+  },
+  {
+    "id": 118,
+    "claim": "Laporan internal privatisasi BUMN sengaja disembunyikan karena merugikan partai berkuasa menjelang pemilu.",
+    "status": "disinformasi",
+    "summary": "Laporan tersebut tersedia publik di situs resmi lembaga terkait. Narasi 'disembunyikan' dibuat untuk memancing ketidakpercayaan terhadap institusi.",
+    "category": "isu",
+    "source": "https://cekfakta.tempo.co",
+    "generated_at": "2026-10-30"
+  },
+  {
+    "id": 119,
+    "claim": "Data proyek infrastruktur strategis yang dirilis pemerintah sengaja dimanipulasi agar terlihat sukses sebelum pilkada.",
+    "status": "disinformasi",
+    "summary": "Metodologi pengumpulan data mengikuti standar BPS. Klaim manipulasi muncul dari akun anonim tanpa bukti metodologis.",
+    "category": "kebijakan",
+    "source": "https://liputan6.com/cek-fakta",
+    "generated_at": "2026-10-30"
+  },
+  {
+    "id": 120,
+    "claim": "Jaringan buzzer terkoordinasi menyebarkan narasi palsu soal energi terbarukan dengan pola unggahan identik di ratusan akun.",
+    "status": "disinformasi",
+    "summary": "Analisis CIB (Coordinated Inauthentic Behavior) oleh peneliti independen mengonfirmasi pola koordinasi, namun konten dasar mengandung fakta yang diputarbalikkan.",
+    "category": "sektor",
+    "source": "https://ajiindonesia.or.id/independen.or.id",
+    "generated_at": "2026-10-30"
+  },
+  {
+    "id": 121,
+    "claim": "Trending topik media sosial mengenai kebebasan berpendapat disetel sepenuhnya oleh jaringan buzzer pesanan kelompok politik.",
+    "status": "sebagian benar",
+    "summary": "Analisis media sosial mendeteksi lonjakan aktivitas akun terkoordinasi (CIB), namun tidak seluruhnya berasal dari satu pesanan tunggal.",
+    "category": "isu",
+    "source": "https://turnbackhoax.id",
+    "generated_at": "2026-10-30"
+  },
+  {
+    "id": 122,
+    "claim": "subsidi BBM memang naik, namun kenaikannya disebut jauh lebih besar dari kenyataan yang berlaku.",
+    "status": "sebagian benar",
+    "summary": "Kenaikan memang terjadi sesuai regulasi yang berlaku, namun angka yang viral dalam narasi tersebut dilebih-lebihkan hingga tiga kali lipat.",
+    "category": "kebijakan",
+    "source": "https://kominfo.go.id/content/detail",
+    "generated_at": "2026-10-30"
+  },
+  {
+    "id": 123,
+    "claim": "Anggaran sektor ketenagakerjaan memang dipotong, tetapi bukan untuk keperluan kampanye seperti yang diklaim.",
+    "status": "sebagian benar",
+    "summary": "Pemotongan anggaran memang terjadi akibat efisiensi fiskal, namun klaim bahwa dana dialihkan ke keperluan kampanye tidak didukung bukti apapun.",
+    "category": "sektor",
+    "source": "https://cekfakta.tempo.co",
+    "generated_at": "2026-10-30"
+  },
+  {
+    "id": 124,
+    "claim": "Pemerintah resmi mengumumkan regulasi digital baru berlaku mulai kuartal berikutnya melalui Peraturan Presiden.",
+    "status": "benar",
+    "summary": "Peraturan Presiden telah diterbitkan dan dapat diakses di lembaran negara. Tidak ditemukan unsur manipulasi dalam penyebaran informasi ini.",
+    "category": "kebijakan",
+    "source": "https://liputan6.com/cek-fakta",
+    "generated_at": "2026-10-30"
+  },
+  {
+    "id": 125,
+    "claim": "Lembaga independen mengkonfirmasi adanya jaringan disinformasi terkait perubahan iklim dengan bukti forensik digital.",
+    "status": "benar",
+    "summary": "Laporan lengkap tersedia dengan metodologi terbuka. Temuan divalidasi oleh tiga lembaga riset berbeda secara independen.",
+    "category": "isu",
+    "source": "https://ajiindonesia.or.id/independen.or.id",
+    "generated_at": "2026-10-30"
+  },
+  {
+    "id": 126,
+    "claim": "Indeks kualitas sektor infrastruktur digital meningkat berdasarkan laporan tahunan BPS yang dipublikasikan secara transparan.",
+    "status": "benar",
+    "summary": "Data BPS tersedia di portal resmi dengan metodologi yang dapat diverifikasi publik. Tidak ada indikasi manipulasi narasi dalam penyebaran informasi ini.",
+    "category": "sektor",
+    "source": "https://turnbackhoax.id",
+    "generated_at": "2026-10-30"
+  },
+  {
+    "id": 127,
+    "claim": "Pemerintah diam-diam mencabut kebijakan upah minimum tanpa sepengetahuan DPR.",
+    "status": "hoaks",
+    "summary": "Tidak ada dokumen resmi yang mengonfirmasi pencabutan tersebut. Klaim beredar melalui pesan berantai tanpa sumber primer yang valid.",
+    "category": "kebijakan",
+    "source": "https://kominfo.go.id/content/detail",
+    "generated_at": "2026-10-30"
+  },
+  {
+    "id": 128,
+    "claim": "Dokumen bocor mengungkap anggaran khusus negara dialokasikan untuk membayar buzzer pembuat hoaks terkait layanan kesehatan.",
+    "status": "hoaks",
+    "summary": "Dokumen yang beredar adalah draf komunikasi publik kementerian, namun narasinya dipintir seolah-olah dialokasikan khusus untuk produksi hoaks.",
+    "category": "sektor",
+    "source": "https://cekfakta.tempo.co",
+    "generated_at": "2026-10-30"
+  },
+  {
+    "id": 129,
+    "claim": "Viral: warga dipaksa bayar program beasiswa nasional dua kali lipat mulai bulan depan.",
+    "status": "hoaks",
+    "summary": "Tidak ada peraturan resmi yang mengatur kenaikan ganda tersebut. Gambar yang digunakan sebagai bukti adalah hasil editan.",
+    "category": "kebijakan",
+    "source": "https://liputan6.com/cek-fakta",
+    "generated_at": "2026-10-30"
+  },
+  {
+    "id": 130,
+    "claim": "Pemerintah secara resmi merekrut influencer dan buzzer untuk membungkam kritik publik di ruang digital.",
+    "status": "hoaks",
+    "summary": "Pemerintah menegaskan kerja sama dengan influencer murni dilakukan untuk sosialisasi program pembangunan, bukan untuk membungkam kritik.",
+    "category": "isu",
+    "source": "https://ajiindonesia.or.id/independen.or.id",
+    "generated_at": "2026-10-30"
+  },
+  {
+    "id": 131,
+    "claim": "Buzzer sengaja memelintir data statistik sektor sumber daya alam untuk menutupi evaluasi kinerja program.",
+    "status": "disinformasi",
+    "summary": "Data yang dipaparkan lembaga resmi telah melalui audit independen, namun klaim yang beredar di media sosial menggunakan pemotongan grafik yang menyesatkan.",
+    "category": "sektor",
+    "source": "https://turnbackhoax.id",
+    "generated_at": "2026-10-30"
+  },
+  {
+    "id": 132,
+    "claim": "Laporan internal anggaran pendidikan sengaja disembunyikan karena merugikan partai berkuasa menjelang pemilu.",
+    "status": "disinformasi",
+    "summary": "Laporan tersebut tersedia publik di situs resmi lembaga terkait. Narasi 'disembunyikan' dibuat untuk memancing ketidakpercayaan terhadap institusi.",
+    "category": "isu",
+    "source": "https://kominfo.go.id/content/detail",
+    "generated_at": "2026-10-30"
+  },
+  {
+    "id": 133,
+    "claim": "Data kebijakan upah minimum yang dirilis pemerintah sengaja dimanipulasi agar terlihat sukses sebelum pilkada.",
+    "status": "disinformasi",
+    "summary": "Metodologi pengumpulan data mengikuti standar BPS. Klaim manipulasi muncul dari akun anonim tanpa bukti metodologis.",
+    "category": "kebijakan",
+    "source": "https://cekfakta.tempo.co",
+    "generated_at": "2026-10-30"
+  },
+  {
+    "id": 134,
+    "claim": "Jaringan buzzer terkoordinasi menyebarkan narasi palsu soal energi terbarukan dengan pola unggahan identik di ratusan akun.",
+    "status": "disinformasi",
+    "summary": "Analisis CIB (Coordinated Inauthentic Behavior) oleh peneliti independen mengonfirmasi pola koordinasi, namun konten dasar mengandung fakta yang diputarbalikkan.",
+    "category": "sektor",
+    "source": "https://liputan6.com/cek-fakta",
+    "generated_at": "2026-10-30"
+  },
+  {
+    "id": 135,
+    "claim": "Trending topik media sosial mengenai isu tenaga kerja asing disetel sepenuhnya oleh jaringan buzzer pesanan kelompok politik.",
+    "status": "sebagian benar",
+    "summary": "Analisis media sosial mendeteksi lonjakan aktivitas akun terkoordinasi (CIB), namun tidak seluruhnya berasal dari satu pesanan tunggal.",
+    "category": "isu",
+    "source": "https://ajiindonesia.or.id/independen.or.id",
+    "generated_at": "2026-10-30"
+  },
+  {
+    "id": 136,
+    "claim": "regulasi media sosial memang naik, namun kenaikannya disebut jauh lebih besar dari kenyataan yang berlaku.",
+    "status": "sebagian benar",
+    "summary": "Kenaikan memang terjadi sesuai regulasi yang berlaku, namun angka yang viral dalam narasi tersebut dilebih-lebihkan hingga tiga kali lipat.",
+    "category": "kebijakan",
+    "source": "https://turnbackhoax.id",
+    "generated_at": "2026-10-30"
+  },
+  {
+    "id": 137,
+    "claim": "Anggaran sektor pertanian memang dipotong, tetapi bukan untuk keperluan kampanye seperti yang diklaim.",
+    "status": "sebagian benar",
+    "summary": "Pemotongan anggaran memang terjadi akibat efisiensi fiskal, namun klaim bahwa dana dialihkan ke keperluan kampanye tidak didukung bukti apapun.",
+    "category": "sektor",
+    "source": "https://kominfo.go.id/content/detail",
+    "generated_at": "2026-10-30"
+  },
+  {
+    "id": 138,
+    "claim": "Pemerintah resmi mengumumkan kenaikan tarif pajak berlaku mulai kuartal berikutnya melalui Peraturan Presiden.",
+    "status": "benar",
+    "summary": "Peraturan Presiden telah diterbitkan dan dapat diakses di lembaran negara. Tidak ditemukan unsur manipulasi dalam penyebaran informasi ini.",
+    "category": "kebijakan",
+    "source": "https://cekfakta.tempo.co",
+    "generated_at": "2026-10-30"
+  },
+  {
+    "id": 139,
+    "claim": "Lembaga independen mengkonfirmasi adanya jaringan disinformasi terkait krisis pangan global dengan bukti forensik digital.",
+    "status": "benar",
+    "summary": "Laporan lengkap tersedia dengan metodologi terbuka. Temuan divalidasi oleh tiga lembaga riset berbeda secara independen.",
+    "category": "isu",
+    "source": "https://liputan6.com/cek-fakta",
+    "generated_at": "2026-10-30"
+  },
+  {
+    "id": 140,
+    "claim": "Indeks kualitas sektor energi terbarukan meningkat berdasarkan laporan tahunan BPS yang dipublikasikan secara transparan.",
+    "status": "benar",
+    "summary": "Data BPS tersedia di portal resmi dengan metodologi yang dapat diverifikasi publik. Tidak ada indikasi manipulasi narasi dalam penyebaran informasi ini.",
+    "category": "sektor",
+    "source": "https://ajiindonesia.or.id/independen.or.id",
+    "generated_at": "2026-10-30"
+  },
+  {
+    "id": 141,
+    "claim": "Pemerintah diam-diam mencabut program beasiswa nasional tanpa sepengetahuan DPR.",
+    "status": "hoaks",
+    "summary": "Tidak ada dokumen resmi yang mengonfirmasi pencabutan tersebut. Klaim beredar melalui pesan berantai tanpa sumber primer yang valid.",
+    "category": "kebijakan",
+    "source": "https://turnbackhoax.id",
+    "generated_at": "2026-10-30"
+  },
+  {
+    "id": 142,
+    "claim": "Dokumen bocor mengungkap anggaran khusus negara dialokasikan untuk membayar buzzer pembuat hoaks terkait ketenagakerjaan.",
+    "status": "hoaks",
+    "summary": "Dokumen yang beredar adalah draf komunikasi publik kementerian, namun narasinya dipintir seolah-olah dialokasikan khusus untuk produksi hoaks.",
+    "category": "sektor",
+    "source": "https://kominfo.go.id/content/detail",
+    "generated_at": "2026-10-30"
+  },
+  {
+    "id": 143,
+    "claim": "Viral: warga dipaksa bayar program beasiswa nasional dua kali lipat mulai bulan depan.",
+    "status": "hoaks",
+    "summary": "Tidak ada peraturan resmi yang mengatur kenaikan ganda tersebut. Gambar yang digunakan sebagai bukti adalah hasil editan.",
+    "category": "kebijakan",
+    "source": "https://cekfakta.tempo.co",
+    "generated_at": "2026-10-30"
+  },
+  {
+    "id": 144,
+    "claim": "Pemerintah secara resmi merekrut influencer dan buzzer untuk membungkam kritik publik di ruang digital.",
+    "status": "hoaks",
+    "summary": "Pemerintah menegaskan kerja sama dengan influencer murni dilakukan untuk sosialisasi program pembangunan, bukan untuk membungkam kritik.",
+    "category": "isu",
+    "source": "https://liputan6.com/cek-fakta",
+    "generated_at": "2026-10-30"
+  },
+  {
+    "id": 145,
+    "claim": "Buzzer sengaja memelintir data statistik sektor pariwisata untuk menutupi evaluasi kinerja program.",
+    "status": "disinformasi",
+    "summary": "Data yang dipaparkan lembaga resmi telah melalui audit independen, namun klaim yang beredar di media sosial menggunakan pemotongan grafik yang menyesatkan.",
+    "category": "sektor",
+    "source": "https://ajiindonesia.or.id/independen.or.id",
+    "generated_at": "2026-10-30"
+  },
+  {
+    "id": 146,
+    "claim": "Laporan internal isu tenaga kerja asing sengaja disembunyikan karena merugikan partai berkuasa menjelang pemilu.",
+    "status": "disinformasi",
+    "summary": "Laporan tersebut tersedia publik di situs resmi lembaga terkait. Narasi 'disembunyikan' dibuat untuk memancing ketidakpercayaan terhadap institusi.",
+    "category": "isu",
+    "source": "https://turnbackhoax.id",
+    "generated_at": "2026-10-30"
+  },
+  {
+    "id": 147,
+    "claim": "Data subsidi BBM yang dirilis pemerintah sengaja dimanipulasi agar terlihat sukses sebelum pilkada.",
+    "status": "disinformasi",
+    "summary": "Metodologi pengumpulan data mengikuti standar BPS. Klaim manipulasi muncul dari akun anonim tanpa bukti metodologis.",
+    "category": "kebijakan",
+    "source": "https://kominfo.go.id/content/detail",
+    "generated_at": "2026-10-30"
+  },
+  {
+    "id": 148,
+    "claim": "Jaringan buzzer terkoordinasi menyebarkan narasi palsu soal ketahanan pangan dengan pola unggahan identik di ratusan akun.",
+    "status": "disinformasi",
+    "summary": "Analisis CIB (Coordinated Inauthentic Behavior) oleh peneliti independen mengonfirmasi pola koordinasi, namun konten dasar mengandung fakta yang diputarbalikkan.",
+    "category": "sektor",
+    "source": "https://cekfakta.tempo.co",
+    "generated_at": "2026-10-30"
+  },
+  {
+    "id": 149,
+    "claim": "Trending topik media sosial mengenai kebebasan berpendapat disetel sepenuhnya oleh jaringan buzzer pesanan kelompok politik.",
+    "status": "sebagian benar",
+    "summary": "Analisis media sosial mendeteksi lonjakan aktivitas akun terkoordinasi (CIB), namun tidak seluruhnya berasal dari satu pesanan tunggal.",
+    "category": "isu",
+    "source": "https://liputan6.com/cek-fakta",
+    "generated_at": "2026-10-30"
+  },
+  {
+    "id": 150,
+    "claim": "kebijakan impor pangan memang naik, namun kenaikannya disebut jauh lebih besar dari kenyataan yang berlaku.",
+    "status": "sebagian benar",
+    "summary": "Kenaikan memang terjadi sesuai regulasi yang berlaku, namun angka yang viral dalam narasi tersebut dilebih-lebihkan hingga tiga kali lipat.",
+    "category": "kebijakan",
+    "source": "https://ajiindonesia.or.id/independen.or.id",
+    "generated_at": "2026-10-30"
+  },
+  {
+    "id": 151,
+    "claim": "Anggaran sektor sumber daya alam memang dipotong, tetapi bukan untuk keperluan kampanye seperti yang diklaim.",
+    "status": "sebagian benar",
+    "summary": "Pemotongan anggaran memang terjadi akibat efisiensi fiskal, namun klaim bahwa dana dialihkan ke keperluan kampanye tidak didukung bukti apapun.",
+    "category": "sektor",
+    "source": "https://turnbackhoax.id",
+    "generated_at": "2026-10-30"
+  },
+  {
+    "id": 152,
+    "claim": "Pemerintah resmi mengumumkan program beasiswa nasional berlaku mulai kuartal berikutnya melalui Peraturan Presiden.",
+    "status": "benar",
+    "summary": "Peraturan Presiden telah diterbitkan dan dapat diakses di lembaran negara. Tidak ditemukan unsur manipulasi dalam penyebaran informasi ini.",
+    "category": "kebijakan",
+    "source": "https://kominfo.go.id/content/detail",
+    "generated_at": "2026-10-30"
+  },
+  {
+    "id": 153,
+    "claim": "Lembaga independen mengkonfirmasi adanya jaringan disinformasi terkait privatisasi BUMN dengan bukti forensik digital.",
+    "status": "benar",
+    "summary": "Laporan lengkap tersedia dengan metodologi terbuka. Temuan divalidasi oleh tiga lembaga riset berbeda secara independen.",
+    "category": "isu",
+    "source": "https://cekfakta.tempo.co",
+    "generated_at": "2026-10-30"
+  },
+  {
+    "id": 154,
+    "claim": "Indeks kualitas sektor layanan kesehatan meningkat berdasarkan laporan tahunan BPS yang dipublikasikan secara transparan.",
+    "status": "benar",
+    "summary": "Data BPS tersedia di portal resmi dengan metodologi yang dapat diverifikasi publik. Tidak ada indikasi manipulasi narasi dalam penyebaran informasi ini.",
+    "category": "sektor",
+    "source": "https://liputan6.com/cek-fakta",
+    "generated_at": "2026-10-30"
+  },
+  {
+    "id": 155,
+    "claim": "Pemerintah diam-diam mencabut kebijakan impor pangan tanpa sepengetahuan DPR.",
+    "status": "hoaks",
+    "summary": "Tidak ada dokumen resmi yang mengonfirmasi pencabutan tersebut. Klaim beredar melalui pesan berantai tanpa sumber primer yang valid.",
+    "category": "kebijakan",
+    "source": "https://ajiindonesia.or.id/independen.or.id",
+    "generated_at": "2026-10-30"
+  },
+  {
+    "id": 156,
+    "claim": "Dokumen bocor mengungkap anggaran khusus negara dialokasikan untuk membayar buzzer pembuat hoaks terkait ketenagakerjaan.",
+    "status": "hoaks",
+    "summary": "Dokumen yang beredar adalah draf komunikasi publik kementerian, namun narasinya dipintir seolah-olah dialokasikan khusus untuk produksi hoaks.",
+    "category": "sektor",
+    "source": "https://turnbackhoax.id",
+    "generated_at": "2026-10-30"
+  },
+  {
+    "id": 157,
+    "claim": "Viral: warga dipaksa bayar regulasi digital baru dua kali lipat mulai bulan depan.",
+    "status": "hoaks",
+    "summary": "Tidak ada peraturan resmi yang mengatur kenaikan ganda tersebut. Gambar yang digunakan sebagai bukti adalah hasil editan.",
+    "category": "kebijakan",
+    "source": "https://kominfo.go.id/content/detail",
+    "generated_at": "2026-10-30"
+  },
+  {
+    "id": 158,
+    "claim": "Pemerintah secara resmi merekrut influencer dan buzzer untuk membungkam kritik publik di ruang digital.",
+    "status": "hoaks",
+    "summary": "Pemerintah menegaskan kerja sama dengan influencer murni dilakukan untuk sosialisasi program pembangunan, bukan untuk membungkam kritik.",
+    "category": "isu",
+    "source": "https://cekfakta.tempo.co",
+    "generated_at": "2026-10-30"
+  },
+  {
+    "id": 159,
+    "claim": "Buzzer sengaja memelintir data statistik sektor ketahanan pangan untuk menutupi evaluasi kinerja program.",
+    "status": "disinformasi",
+    "summary": "Data yang dipaparkan lembaga resmi telah melalui audit independen, namun klaim yang beredar di media sosial menggunakan pemotongan grafik yang menyesatkan.",
+    "category": "sektor",
+    "source": "https://liputan6.com/cek-fakta",
+    "generated_at": "2026-10-30"
+  },
+  {
+    "id": 160,
+    "claim": "Laporan internal pemilihan umum sengaja disembunyikan karena merugikan partai berkuasa menjelang pemilu.",
+    "status": "disinformasi",
+    "summary": "Laporan tersebut tersedia publik di situs resmi lembaga terkait. Narasi 'disembunyikan' dibuat untuk memancing ketidakpercayaan terhadap institusi.",
+    "category": "isu",
+    "source": "https://ajiindonesia.or.id/independen.or.id",
+    "generated_at": "2026-10-30"
+  },
+  {
+    "id": 161,
+    "claim": "Data penghapusan kartu prakerja yang dirilis pemerintah sengaja dimanipulasi agar terlihat sukses sebelum pilkada.",
+    "status": "disinformasi",
+    "summary": "Metodologi pengumpulan data mengikuti standar BPS. Klaim manipulasi muncul dari akun anonim tanpa bukti metodologis.",
+    "category": "kebijakan",
+    "source": "https://turnbackhoax.id",
+    "generated_at": "2026-10-30"
+  },
+  {
+    "id": 162,
+    "claim": "Jaringan buzzer terkoordinasi menyebarkan narasi palsu soal pariwisata dengan pola unggahan identik di ratusan akun.",
+    "status": "disinformasi",
+    "summary": "Analisis CIB (Coordinated Inauthentic Behavior) oleh peneliti independen mengonfirmasi pola koordinasi, namun konten dasar mengandung fakta yang diputarbalikkan.",
+    "category": "sektor",
+    "source": "https://kominfo.go.id/content/detail",
+    "generated_at": "2026-10-30"
+  },
+  {
+    "id": 163,
+    "claim": "Trending topik media sosial mengenai kebebasan berpendapat disetel sepenuhnya oleh jaringan buzzer pesanan kelompok politik.",
+    "status": "sebagian benar",
+    "summary": "Analisis media sosial mendeteksi lonjakan aktivitas akun terkoordinasi (CIB), namun tidak seluruhnya berasal dari satu pesanan tunggal.",
+    "category": "isu",
+    "source": "https://cekfakta.tempo.co",
+    "generated_at": "2026-10-30"
+  },
+  {
+    "id": 164,
+    "claim": "kebijakan energi nasional memang naik, namun kenaikannya disebut jauh lebih besar dari kenyataan yang berlaku.",
+    "status": "sebagian benar",
+    "summary": "Kenaikan memang terjadi sesuai regulasi yang berlaku, namun angka yang viral dalam narasi tersebut dilebih-lebihkan hingga tiga kali lipat.",
+    "category": "kebijakan",
+    "source": "https://liputan6.com/cek-fakta",
+    "generated_at": "2026-10-30"
+  },
+  {
+    "id": 165,
+    "claim": "Anggaran sektor energi terbarukan memang dipotong, tetapi bukan untuk keperluan kampanye seperti yang diklaim.",
+    "status": "sebagian benar",
+    "summary": "Pemotongan anggaran memang terjadi akibat efisiensi fiskal, namun klaim bahwa dana dialihkan ke keperluan kampanye tidak didukung bukti apapun.",
+    "category": "sektor",
+    "source": "https://ajiindonesia.or.id/independen.or.id",
+    "generated_at": "2026-10-30"
+  },
+  {
+    "id": 166,
+    "claim": "Pemerintah resmi mengumumkan kebijakan impor pangan berlaku mulai kuartal berikutnya melalui Peraturan Presiden.",
+    "status": "benar",
+    "summary": "Peraturan Presiden telah diterbitkan dan dapat diakses di lembaran negara. Tidak ditemukan unsur manipulasi dalam penyebaran informasi ini.",
+    "category": "kebijakan",
+    "source": "https://turnbackhoax.id",
+    "generated_at": "2026-10-30"
+  },
+  {
+    "id": 167,
+    "claim": "Lembaga independen mengkonfirmasi adanya jaringan disinformasi terkait privatisasi BUMN dengan bukti forensik digital.",
+    "status": "benar",
+    "summary": "Laporan lengkap tersedia dengan metodologi terbuka. Temuan divalidasi oleh tiga lembaga riset berbeda secara independen.",
+    "category": "isu",
+    "source": "https://kominfo.go.id/content/detail",
+    "generated_at": "2026-10-30"
+  },
+  {
+    "id": 168,
+    "claim": "Indeks kualitas sektor pertahanan dan keamanan meningkat berdasarkan laporan tahunan BPS yang dipublikasikan secara transparan.",
+    "status": "benar",
+    "summary": "Data BPS tersedia di portal resmi dengan metodologi yang dapat diverifikasi publik. Tidak ada indikasi manipulasi narasi dalam penyebaran informasi ini.",
+    "category": "sektor",
+    "source": "https://cekfakta.tempo.co",
+    "generated_at": "2026-10-30"
+  },
+  {
+    "id": 169,
+    "claim": "Pemerintah diam-diam mencabut subsidi BBM tanpa sepengetahuan DPR.",
+    "status": "hoaks",
+    "summary": "Tidak ada dokumen resmi yang mengonfirmasi pencabutan tersebut. Klaim beredar melalui pesan berantai tanpa sumber primer yang valid.",
+    "category": "kebijakan",
+    "source": "https://liputan6.com/cek-fakta",
+    "generated_at": "2026-10-30"
+  },
+  {
+    "id": 170,
+    "claim": "Dokumen bocor mengungkap anggaran khusus negara dialokasikan untuk membayar buzzer pembuat hoaks terkait layanan kesehatan.",
+    "status": "hoaks",
+    "summary": "Dokumen yang beredar adalah draf komunikasi publik kementerian, namun narasinya dipintir seolah-olah dialokasikan khusus untuk produksi hoaks.",
+    "category": "sektor",
+    "source": "https://ajiindonesia.or.id/independen.or.id",
+    "generated_at": "2026-10-30"
+  },
+  {
+    "id": 171,
+    "claim": "Viral: warga dipaksa bayar program beasiswa nasional dua kali lipat mulai bulan depan.",
+    "status": "hoaks",
+    "summary": "Tidak ada peraturan resmi yang mengatur kenaikan ganda tersebut. Gambar yang digunakan sebagai bukti adalah hasil editan.",
+    "category": "kebijakan",
+    "source": "https://turnbackhoax.id",
+    "generated_at": "2026-10-30"
+  },
+  {
+    "id": 172,
+    "claim": "Pemerintah secara resmi merekrut influencer dan buzzer untuk membungkam kritik publik di ruang digital.",
+    "status": "hoaks",
+    "summary": "Pemerintah menegaskan kerja sama dengan influencer murni dilakukan untuk sosialisasi program pembangunan, bukan untuk membungkam kritik.",
+    "category": "isu",
+    "source": "https://kominfo.go.id/content/detail",
+    "generated_at": "2026-10-30"
+  },
+  {
+    "id": 173,
+    "claim": "Buzzer sengaja memelintir data statistik sektor pendidikan tinggi untuk menutupi evaluasi kinerja program.",
+    "status": "disinformasi",
+    "summary": "Data yang dipaparkan lembaga resmi telah melalui audit independen, namun klaim yang beredar di media sosial menggunakan pemotongan grafik yang menyesatkan.",
+    "category": "sektor",
+    "source": "https://cekfakta.tempo.co",
+    "generated_at": "2026-10-30"
+  },
+  {
+    "id": 174,
+    "claim": "Laporan internal krisis pangan global sengaja disembunyikan karena merugikan partai berkuasa menjelang pemilu.",
+    "status": "disinformasi",
+    "summary": "Laporan tersebut tersedia publik di situs resmi lembaga terkait. Narasi 'disembunyikan' dibuat untuk memancing ketidakpercayaan terhadap institusi.",
+    "category": "isu",
+    "source": "https://liputan6.com/cek-fakta",
+    "generated_at": "2026-10-30"
+  },
+  {
+    "id": 175,
+    "claim": "Data kebijakan impor pangan yang dirilis pemerintah sengaja dimanipulasi agar terlihat sukses sebelum pilkada.",
+    "status": "disinformasi",
+    "summary": "Metodologi pengumpulan data mengikuti standar BPS. Klaim manipulasi muncul dari akun anonim tanpa bukti metodologis.",
+    "category": "kebijakan",
+    "source": "https://ajiindonesia.or.id/independen.or.id",
+    "generated_at": "2026-10-30"
+  },
+  {
+    "id": 176,
+    "claim": "Jaringan buzzer terkoordinasi menyebarkan narasi palsu soal energi terbarukan dengan pola unggahan identik di ratusan akun.",
+    "status": "disinformasi",
+    "summary": "Analisis CIB (Coordinated Inauthentic Behavior) oleh peneliti independen mengonfirmasi pola koordinasi, namun konten dasar mengandung fakta yang diputarbalikkan.",
+    "category": "sektor",
+    "source": "https://turnbackhoax.id",
+    "generated_at": "2026-10-30"
+  },
+  {
+    "id": 177,
+    "claim": "Trending topik media sosial mengenai keamanan siber nasional disetel sepenuhnya oleh jaringan buzzer pesanan kelompok politik.",
+    "status": "sebagian benar",
+    "summary": "Analisis media sosial mendeteksi lonjakan aktivitas akun terkoordinasi (CIB), namun tidak seluruhnya berasal dari satu pesanan tunggal.",
+    "category": "isu",
+    "source": "https://kominfo.go.id/content/detail",
+    "generated_at": "2026-10-30"
+  },
+  {
+    "id": 178,
+    "claim": "regulasi digital baru memang naik, namun kenaikannya disebut jauh lebih besar dari kenyataan yang berlaku.",
+    "status": "sebagian benar",
+    "summary": "Kenaikan memang terjadi sesuai regulasi yang berlaku, namun angka yang viral dalam narasi tersebut dilebih-lebihkan hingga tiga kali lipat.",
+    "category": "kebijakan",
+    "source": "https://cekfakta.tempo.co",
+    "generated_at": "2026-10-30"
+  },
+  {
+    "id": 179,
+    "claim": "Anggaran sektor pariwisata memang dipotong, tetapi bukan untuk keperluan kampanye seperti yang diklaim.",
+    "status": "sebagian benar",
+    "summary": "Pemotongan anggaran memang terjadi akibat efisiensi fiskal, namun klaim bahwa dana dialihkan ke keperluan kampanye tidak didukung bukti apapun.",
+    "category": "sektor",
+    "source": "https://liputan6.com/cek-fakta",
+    "generated_at": "2026-10-30"
+  },
+  {
+    "id": 180,
+    "claim": "Pemerintah resmi mengumumkan program beasiswa nasional berlaku mulai kuartal berikutnya melalui Peraturan Presiden.",
+    "status": "benar",
+    "summary": "Peraturan Presiden telah diterbitkan dan dapat diakses di lembaran negara. Tidak ditemukan unsur manipulasi dalam penyebaran informasi ini.",
+    "category": "kebijakan",
+    "source": "https://ajiindonesia.or.id/independen.or.id",
+    "generated_at": "2026-10-30"
+  },
+  {
+    "id": 181,
+    "claim": "Lembaga independen mengkonfirmasi adanya jaringan disinformasi terkait pemilihan umum dengan bukti forensik digital.",
+    "status": "benar",
+    "summary": "Laporan lengkap tersedia dengan metodologi terbuka. Temuan divalidasi oleh tiga lembaga riset berbeda secara independen.",
+    "category": "isu",
+    "source": "https://turnbackhoax.id",
+    "generated_at": "2026-10-30"
+  },
+  {
+    "id": 182,
+    "claim": "Indeks kualitas sektor pertanian meningkat berdasarkan laporan tahunan BPS yang dipublikasikan secara transparan.",
+    "status": "benar",
+    "summary": "Data BPS tersedia di portal resmi dengan metodologi yang dapat diverifikasi publik. Tidak ada indikasi manipulasi narasi dalam penyebaran informasi ini.",
+    "category": "sektor",
+    "source": "https://kominfo.go.id/content/detail",
+    "generated_at": "2026-10-30"
+  },
+  {
+    "id": 183,
+    "claim": "Pemerintah diam-diam mencabut regulasi digital baru tanpa sepengetahuan DPR.",
+    "status": "hoaks",
+    "summary": "Tidak ada dokumen resmi yang mengonfirmasi pencabutan tersebut. Klaim beredar melalui pesan berantai tanpa sumber primer yang valid.",
+    "category": "kebijakan",
+    "source": "https://cekfakta.tempo.co",
+    "generated_at": "2026-10-30"
+  },
+  {
+    "id": 184,
+    "claim": "Dokumen bocor mengungkap anggaran khusus negara dialokasikan untuk membayar buzzer pembuat hoaks terkait pertanian.",
+    "status": "hoaks",
+    "summary": "Dokumen yang beredar adalah draf komunikasi publik kementerian, namun narasinya dipintir seolah-olah dialokasikan khusus untuk produksi hoaks.",
+    "category": "sektor",
+    "source": "https://liputan6.com/cek-fakta",
+    "generated_at": "2026-10-30"
+  },
+  {
+    "id": 185,
+    "claim": "Viral: warga dipaksa bayar kebijakan energi nasional dua kali lipat mulai bulan depan.",
+    "status": "hoaks",
+    "summary": "Tidak ada peraturan resmi yang mengatur kenaikan ganda tersebut. Gambar yang digunakan sebagai bukti adalah hasil editan.",
+    "category": "kebijakan",
+    "source": "https://ajiindonesia.or.id/independen.or.id",
+    "generated_at": "2026-10-30"
+  },
+  {
+    "id": 186,
+    "claim": "Pemerintah secara resmi merekrut influencer dan buzzer untuk membungkam kritik publik di ruang digital.",
+    "status": "hoaks",
+    "summary": "Pemerintah menegaskan kerja sama dengan influencer murni dilakukan untuk sosialisasi program pembangunan, bukan untuk membungkam kritik.",
+    "category": "isu",
+    "source": "https://turnbackhoax.id",
+    "generated_at": "2026-10-30"
+  },
+  {
+    "id": 187,
+    "claim": "Buzzer sengaja memelintir data statistik sektor pendidikan tinggi untuk menutupi evaluasi kinerja program.",
+    "status": "disinformasi",
+    "summary": "Data yang dipaparkan lembaga resmi telah melalui audit independen, namun klaim yang beredar di media sosial menggunakan pemotongan grafik yang menyesatkan.",
+    "category": "sektor",
+    "source": "https://kominfo.go.id/content/detail",
+    "generated_at": "2026-10-30"
+  },
+  {
+    "id": 188,
+    "claim": "Laporan internal krisis pangan global sengaja disembunyikan karena merugikan partai berkuasa menjelang pemilu.",
+    "status": "disinformasi",
+    "summary": "Laporan tersebut tersedia publik di situs resmi lembaga terkait. Narasi 'disembunyikan' dibuat untuk memancing ketidakpercayaan terhadap institusi.",
+    "category": "isu",
+    "source": "https://cekfakta.tempo.co",
+    "generated_at": "2026-10-30"
+  },
+  {
+    "id": 189,
+    "claim": "Data kebijakan upah minimum yang dirilis pemerintah sengaja dimanipulasi agar terlihat sukses sebelum pilkada.",
+    "status": "disinformasi",
+    "summary": "Metodologi pengumpulan data mengikuti standar BPS. Klaim manipulasi muncul dari akun anonim tanpa bukti metodologis.",
+    "category": "kebijakan",
+    "source": "https://liputan6.com/cek-fakta",
+    "generated_at": "2026-10-30"
+  },
+  {
+    "id": 190,
+    "claim": "Jaringan buzzer terkoordinasi menyebarkan narasi palsu soal infrastruktur digital dengan pola unggahan identik di ratusan akun.",
+    "status": "disinformasi",
+    "summary": "Analisis CIB (Coordinated Inauthentic Behavior) oleh peneliti independen mengonfirmasi pola koordinasi, namun konten dasar mengandung fakta yang diputarbalikkan.",
+    "category": "sektor",
+    "source": "https://ajiindonesia.or.id/independen.or.id",
+    "generated_at": "2026-10-30"
+  },
+  {
+    "id": 191,
+    "claim": "Trending topik media sosial mengenai keamanan siber nasional disetel sepenuhnya oleh jaringan buzzer pesanan kelompok politik.",
+    "status": "sebagian benar",
+    "summary": "Analisis media sosial mendeteksi lonjakan aktivitas akun terkoordinasi (CIB), namun tidak seluruhnya berasal dari satu pesanan tunggal.",
+    "category": "isu",
+    "source": "https://turnbackhoax.id",
+    "generated_at": "2026-10-30"
+  },
+  {
+    "id": 192,
+    "claim": "kenaikan tarif pajak memang naik, namun kenaikannya disebut jauh lebih besar dari kenyataan yang berlaku.",
+    "status": "sebagian benar",
+    "summary": "Kenaikan memang terjadi sesuai regulasi yang berlaku, namun angka yang viral dalam narasi tersebut dilebih-lebihkan hingga tiga kali lipat.",
+    "category": "kebijakan",
+    "source": "https://kominfo.go.id/content/detail",
+    "generated_at": "2026-10-30"
+  },
+  {
+    "id": 193,
+    "claim": "Anggaran sektor energi terbarukan memang dipotong, tetapi bukan untuk keperluan kampanye seperti yang diklaim.",
+    "status": "sebagian benar",
+    "summary": "Pemotongan anggaran memang terjadi akibat efisiensi fiskal, namun klaim bahwa dana dialihkan ke keperluan kampanye tidak didukung bukti apapun.",
+    "category": "sektor",
+    "source": "https://cekfakta.tempo.co",
+    "generated_at": "2026-10-30"
+  },
+  {
+    "id": 194,
+    "claim": "Pemerintah resmi mengumumkan subsidi BBM berlaku mulai kuartal berikutnya melalui Peraturan Presiden.",
+    "status": "benar",
+    "summary": "Peraturan Presiden telah diterbitkan dan dapat diakses di lembaran negara. Tidak ditemukan unsur manipulasi dalam penyebaran informasi ini.",
+    "category": "kebijakan",
+    "source": "https://liputan6.com/cek-fakta",
+    "generated_at": "2026-10-30"
+  },
+  {
+    "id": 195,
+    "claim": "Lembaga independen mengkonfirmasi adanya jaringan disinformasi terkait keamanan siber nasional dengan bukti forensik digital.",
+    "status": "benar",
+    "summary": "Laporan lengkap tersedia dengan metodologi terbuka. Temuan divalidasi oleh tiga lembaga riset berbeda secara independen.",
+    "category": "isu",
+    "source": "https://ajiindonesia.or.id/independen.or.id",
+    "generated_at": "2026-10-30"
+  },
+  {
+    "id": 196,
+    "claim": "Indeks kualitas sektor pariwisata meningkat berdasarkan laporan tahunan BPS yang dipublikasikan secara transparan.",
+    "status": "benar",
+    "summary": "Data BPS tersedia di portal resmi dengan metodologi yang dapat diverifikasi publik. Tidak ada indikasi manipulasi narasi dalam penyebaran informasi ini.",
+    "category": "sektor",
+    "source": "https://turnbackhoax.id",
+    "generated_at": "2026-10-30"
+  },
+  {
+    "id": 197,
+    "claim": "Pemerintah diam-diam mencabut kebijakan impor pangan tanpa sepengetahuan DPR.",
+    "status": "hoaks",
+    "summary": "Tidak ada dokumen resmi yang mengonfirmasi pencabutan tersebut. Klaim beredar melalui pesan berantai tanpa sumber primer yang valid.",
+    "category": "kebijakan",
+    "source": "https://kominfo.go.id/content/detail",
+    "generated_at": "2026-10-30"
+  },
+  {
+    "id": 198,
+    "claim": "Dokumen bocor mengungkap anggaran khusus negara dialokasikan untuk membayar buzzer pembuat hoaks terkait ketenagakerjaan.",
+    "status": "hoaks",
+    "summary": "Dokumen yang beredar adalah draf komunikasi publik kementerian, namun narasinya dipintir seolah-olah dialokasikan khusus untuk produksi hoaks.",
+    "category": "sektor",
+    "source": "https://cekfakta.tempo.co",
+    "generated_at": "2026-10-30"
+  },
+  {
+    "id": 199,
+    "claim": "Viral: warga dipaksa bayar proyek infrastruktur strategis dua kali lipat mulai bulan depan.",
+    "status": "hoaks",
+    "summary": "Tidak ada peraturan resmi yang mengatur kenaikan ganda tersebut. Gambar yang digunakan sebagai bukti adalah hasil editan.",
+    "category": "kebijakan",
+    "source": "https://liputan6.com/cek-fakta",
+    "generated_at": "2026-10-30"
+  },
+  {
+    "id": 200,
+    "claim": "Pemerintah secara resmi merekrut influencer dan buzzer untuk membungkam kritik publik di ruang digital.",
+    "status": "hoaks",
+    "summary": "Pemerintah menegaskan kerja sama dengan influencer murni dilakukan untuk sosialisasi program pembangunan, bukan untuk membungkam kritik.",
+    "category": "isu",
+    "source": "https://ajiindonesia.or.id/independen.or.id",
+    "generated_at": "2026-10-30"
+  }
+]

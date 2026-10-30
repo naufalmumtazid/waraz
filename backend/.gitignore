@@ -14,3 +14,6 @@ data/*
 !data/contoh/
 *.db
 .pytest_cache/
+
+# Environment secrets
+.env

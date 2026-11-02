@@ -1,6 +1,6 @@
-"""Database and Supabase connection management for WARAZ.
+"""Database and PostgreSQL (Neon/Supabase) connection management for WARAZ.
 
-Supports both Supabase (PostgreSQL) for production/serverless deployments
+Supports PostgreSQL (Neon / Supabase) for production/serverless deployments
 and local SQLite for offline development and local testing.
 """
 
@@ -21,19 +21,19 @@ load_dotenv(_BACKEND_DIR / ".env")
 logger = logging.getLogger("waraz.db")
 
 # ─────────────────────────────────────────────────────────────
-# Database URL Resolution (Supabase PostgreSQL vs SQLite fallback)
+# Database URL Resolution (Cloud PostgreSQL vs SQLite fallback)
 # ─────────────────────────────────────────────────────────────
 
 RAW_DB_URL = os.getenv("DATABASE_URL") or os.getenv("SUPABASE_DATABASE_URL")
 
 if RAW_DB_URL:
-    # Supabase / Vercel compatibility: ensure postgresql:// scheme
+    # Ensure standard postgresql:// scheme for SQLAlchemy compatibility
     if RAW_DB_URL.startswith("postgres://"):
         DATABASE_URL = RAW_DB_URL.replace("postgres://", "postgresql://", 1)
     else:
         DATABASE_URL = RAW_DB_URL
     IS_SQLITE = False
-    logger.info("Configuring Supabase / PostgreSQL database engine.")
+    logger.info("Configuring PostgreSQL (Neon/Cloud) database engine.")
 else:
     # Local SQLite fallback for development & offline testing
     _DATA_DIR = _BACKEND_DIR / "data"
@@ -58,7 +58,7 @@ if IS_SQLITE:
         cursor.close()
 
 else:
-    # PostgreSQL connection for Supabase
+    # PostgreSQL connection (Neon / Cloud)
     engine = create_engine(
         DATABASE_URL,
         pool_pre_ping=True,
@@ -83,8 +83,9 @@ def init_db(target_engine: Optional[Engine] = None):
     from .models import Base
     eng = target_engine or engine
     Base.metadata.create_all(bind=eng)
-    db_type = "SQLite" if IS_SQLITE else "Supabase/PostgreSQL"
+    db_type = "SQLite" if IS_SQLITE else "PostgreSQL (Neon/Cloud)"
     print(f"[DB] {db_type} database initialized successfully.")
+
 
 
 # ─────────────────────────────────────────────────────────────

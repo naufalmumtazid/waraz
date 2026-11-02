@@ -12,17 +12,15 @@ uv sync
 uv pip install -r requirements.txt
 ```
 
-### 2. Jalankan Backend Server (FastAPI)
+### 2. Jalankan Backend Server (FastAPI REST API)
 ```bash
 uv run uvicorn main:app --reload --port 8000
 ```
+Dokumentasi Swagger API interaktif tersedia di: `http://localhost:8000/docs`
 
-### 3. Jalankan Streamlit Demo UI
-```bash
-uv run streamlit run app_video_demo.py
-```
-
-### 4. Jalankan Pengujian (Pytest)
+### 3. Jalankan Pengujian (Pytest)
 ```bash
 uv run pytest tests/ -v
 ```
+
+*Catatan: Antarmuka pengguna (UI) kini sepenuhnya dipisahkan ke modul `frontend/` (Next.js).*

@@ -17,9 +17,6 @@ imagehash>=4.3.0
 Pillow>=10.0.0
 numpy>=1.24.0,<2.0.0
 
-# Interactive Dashboard UI
-streamlit>=1.28.0
-
 # Testing
 pytest>=8.0.0
 httpx>=0.26.0

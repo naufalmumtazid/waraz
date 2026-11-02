@@ -4,9 +4,10 @@
   "private": true,
   "scripts": {
     "dev": "next dev --webpack",
-    "build": "next build --webpack",
+    "build": "npx tailwindcss -i ./src/app/globals.css -o ./public/tailwind.css --minify && next build --webpack",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "build:css": "npx tailwindcss -i ./src/app/globals.css -o ./public/tailwind.css --minify"
   },
   "dependencies": {
     "lucide-react": "^1.66.0",

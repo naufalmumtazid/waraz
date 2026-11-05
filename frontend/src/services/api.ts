@@ -47,6 +47,144 @@ export interface DetectionResult {
   detail_pasangan?: MatchedPair[];
 }
 
+export interface ClarificationMatch {
+  id: string;
+  claim: string;
+  status: string;
+  summary: string;
+  date: string;
+  source: string;
+  url: string;
+  score: number;
+}
+
+export interface IssueClarificationResponse {
+  status_result:
+    | "sudah_diklarifikasi"
+    | "ditemukan_mirip"
+    | "belum_ditemukan"
+    | "tidak_ada_isi";
+  status_hasil?: string;
+  score: number;
+  matches: ClarificationMatch[];
+  note: string;
+}
+
+export interface PublicClaimSubmission {
+  id: string;
+  claim: string;
+  summary: string;
+  category: string;
+  source: string;
+  source_url: string;
+  anonymous: boolean;
+  submitter_alias: string | null;
+  status: string;
+  review_note: string | null;
+  created_at: string;
+  reviewed_at: string | null;
+}
+
+export const issueClarificationApi = {
+  check: async (issue: string): Promise<IssueClarificationResponse> => {
+    const res = await fetch(`${API_BASE_URL}/api/v1/clarification/check`, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ issue }),
+    });
+
+    if (!res.ok) {
+      const err = await res.json().catch(() => ({}));
+      throw new Error(err.detail || "Failed to evaluate issue clarification.");
+    }
+
+    return res.json();
+  },
+};
+
+export const claimSubmissionApi = {
+  submit: async (payload: {
+    claim: string;
+    summary?: string;
+    source?: string;
+    source_url?: string;
+    category?: string;
+    anonymous?: boolean;
+    submitter_alias?: string;
+  }) => {
+    const res = await fetch(`${API_BASE_URL}/api/v1/clarification/submit`, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(payload),
+    });
+
+    if (!res.ok) {
+      const err = await res.json().catch(() => ({}));
+      throw new Error(err.detail || "Gagal mengirim usulan klaim.");
+    }
+
+    return res.json();
+  },
+};
+
+export const adminClaimsApi = {
+  login: async (payload: { email: string; password: string }) => {
+    const res = await fetch(`${API_BASE_URL}/api/v1/clarification/admin/login`, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(payload),
+    });
+
+    if (!res.ok) {
+      const err = await res.json().catch(() => ({}));
+      throw new Error(err.detail || "Login admin gagal.");
+    }
+
+    return res.json() as Promise<{ token: string; message: string }>;
+  },
+
+  list: async (token: string): Promise<PublicClaimSubmission[]> => {
+    const res = await fetch(`${API_BASE_URL}/api/v1/clarification/admin/claims`, {
+      headers: {
+        "x-admin-token": token,
+      },
+    });
+
+    if (!res.ok) {
+      const err = await res.json().catch(() => ({}));
+      throw new Error(err.detail || "Gagal memuat daftar usulan klaim.");
+    }
+
+    return res.json();
+  },
+
+  review: async (
+    token: string,
+    claimId: string,
+    decision: "approve" | "reject",
+    reviewNote: string
+  ) => {
+    const res = await fetch(
+      `${API_BASE_URL}/api/v1/clarification/admin/claims/${claimId}/review`,
+      {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          "x-admin-token": token,
+        },
+        body: JSON.stringify({ decision, review_note: reviewNote }),
+      }
+    );
+
+    if (!res.ok) {
+      const err = await res.json().catch(() => ({}));
+      throw new Error(err.detail || "Gagal mengupdate status usulan klaim.");
+    }
+
+    return res.json();
+  },
+};
+
 export const videoApi = {
   getThumbnailUrl: (type: "arsip" | "temp", filename: string) => {
     return `${API_BASE_URL}/api/v1/video/thumbnail/${type}/${filename}`;

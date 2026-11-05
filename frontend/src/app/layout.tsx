@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "WARAZ — Pelacak Video Daur Ulang",
-  description: "Platform Intelijen Analisis Disinformasi & Pelacak Video Daur Ulang",
+  title: "WARAZ — Issue Clarification & Video Verification",
+  description: "Cyber intelligence platform for issue clarification and recycled video tracking",
 };
 
 export default function RootLayout({
@@ -12,7 +12,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="id" className="h-full antialiased dark">
+    <html lang="en" className="h-full antialiased dark">
       <head>
         <link rel="stylesheet" href="/tailwind.css" />
       </head>

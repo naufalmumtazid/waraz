@@ -3,12 +3,23 @@
 @tailwind utilities;
 
 :root {
-  --background: #020617;
+  --background: #0b0b12;
   --foreground: #f8fafc;
+  --primary: #fb5858;
+  --primary-soft: rgba(251, 88, 88, 0.12);
+  --primary-strong: #ff6a6a;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
   color: var(--foreground);
-  background: var(--background);
+  background: radial-gradient(circle at top, rgba(251, 88, 88, 0.12), transparent 30%), var(--background);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+::selection {
+  background: rgba(251, 88, 88, 0.35);
 }

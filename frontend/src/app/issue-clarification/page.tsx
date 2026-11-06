@@ -115,6 +115,54 @@ export default function IssueClarificationPage() {
           ? "belum ditemukan"
           : "belum ada isi";
 
+  const formatClaimStatus = (status?: string) => {
+    const normalized = (status || "").trim().toLowerCase();
+    const canonicalStatus =
+      normalized === "sebagian benar"
+        ? "menyesatkan"
+        : normalized === "sebagian_benar"
+          ? "menyesatkan"
+          : normalized;
+
+    const statusMap: Record<string, { label: string; tone: string }> = {
+      hoaks: {
+        label: "Hoaks",
+        tone: "bg-red-500/10 text-red-200 border border-red-500/30",
+      },
+      disinformasi: {
+        label: "Disinformasi",
+        tone: "bg-rose-500/10 text-rose-200 border border-rose-500/30",
+      },
+      menyesatkan: {
+        label: "Menyesatkan",
+        tone: "bg-amber-500/10 text-amber-200 border border-amber-500/30",
+      },
+      benar: {
+        label: "Benar",
+        tone: "bg-emerald-500/10 text-emerald-200 border border-emerald-500/30",
+      },
+      lainnya: {
+        label: "Lainnya",
+        tone: "bg-slate-500/10 text-slate-200 border border-slate-500/30",
+      },
+    };
+
+    const fallback = {
+      label:
+        canonicalStatus
+          ? canonicalStatus
+              .split(" ")
+              .map((part) => part.charAt(0).toUpperCase() + part.slice(1))
+              .join(" ")
+          : "Lainnya",
+      tone: "bg-slate-500/10 text-slate-200 border border-slate-500/30",
+    };
+
+    return statusMap[canonicalStatus] || fallback;
+  };
+
+  const primaryClaimStatus = formatClaimStatus(result?.matches[0]?.status);
+
   return (
     <div className="min-h-screen text-slate-100">
       <header className="border-b border-red-500/20 bg-coal-900/80 backdrop-blur sticky top-0 z-40">
@@ -373,34 +421,49 @@ export default function IssueClarificationPage() {
                   <div className="mt-2 text-3xl font-bold text-white">{result.score.toFixed(2)}</div>
                 </div>
 
+                <div className="rounded-2xl border border-coal-700 bg-coal-950/60 p-4">
+                  <div className="text-[11px] uppercase tracking-[0.2em] text-slate-500">
+                    Status klaim
+                  </div>
+                  <div className={`mt-2 inline-flex items-center rounded-full px-3 py-1.5 text-xs font-medium ${primaryClaimStatus.tone}`}>
+                    {primaryClaimStatus.label}
+                  </div>
+                </div>
+
                 <p className="text-sm leading-relaxed text-slate-300">{result.note}</p>
 
                 <div className="space-y-3">
                   {result.matches.length === 0 ? (
                     <div className="text-sm text-slate-400">Belum ada rekam jejak yang cocok.</div>
                   ) : (
-                    result.matches.map((match) => (
-                      <div key={match.id} className="rounded-2xl border border-red-500/20 bg-red-500/5 p-4">
-                        <div className="mb-2 text-xs uppercase tracking-[0.18em] text-red-200">
-                          {match.status}
+                    result.matches.map((match) => {
+                      const claimStatus = formatClaimStatus(match.status);
+
+                      return (
+                        <div key={match.id} className="rounded-2xl border border-red-500/20 bg-red-500/5 p-4">
+                          <div className="flex items-start justify-between gap-3">
+                            <div className="text-sm font-semibold text-white">{match.claim}</div>
+                            <div className={`inline-flex items-center rounded-full px-2.5 py-1 text-[10px] font-medium uppercase tracking-[0.18em] ${claimStatus.tone}`}>
+                              {claimStatus.label}
+                            </div>
+                          </div>
+                          <div className="mt-2 text-xs text-slate-300">{match.summary}</div>
+                          <div className="mt-3 text-[11px] text-slate-400">
+                            {match.source} · {match.date}
+                          </div>
+                          {match.url && (
+                            <a
+                              href={match.url}
+                              target="_blank"
+                              rel="noreferrer"
+                              className="mt-3 inline-block text-xs text-red-200 underline underline-offset-4"
+                            >
+                              Lihat sumber
+                            </a>
+                          )}
                         </div>
-                        <div className="text-sm font-semibold text-white">{match.claim}</div>
-                        <div className="mt-2 text-xs text-slate-300">{match.summary}</div>
-                        <div className="mt-3 text-[11px] text-slate-400">
-                          {match.source} · {match.date}
-                        </div>
-                        {match.url && (
-                          <a
-                            href={match.url}
-                            target="_blank"
-                            rel="noreferrer"
-                            className="mt-3 inline-block text-xs text-red-200 underline underline-offset-4"
-                          >
-                            Lihat sumber
-                          </a>
-                        )}
-                      </div>
-                    ))
+                      );
+                    })
                   )}
                 </div>
               </div>

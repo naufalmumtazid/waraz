@@ -195,6 +195,26 @@ class TestIssueClarification(unittest.TestCase):
         )
         self.assertEqual(res.status_code, 409)
 
+    def test_admin_flow_approve_preserves_selected_claim_status(self):
+        submit = self.client.post(
+            "/api/v1/clarification/submit",
+            json={"claim": "Kabar hoaks tentang vaksin menebar di media sosial.", "category": "hoaks"},
+        )
+        claim_id = submit.json()["id"]
+
+        self.client.post(
+            f"/api/v1/clarification/admin/claims/{claim_id}/review",
+            headers={"x-admin-token": ADMIN_TOKEN},
+            json={"decision": "approve", "review_note": "Sudah diverifikasi."},
+        )
+
+        cek = self.client.post(
+            "/api/v1/clarification/check",
+            json={"issue": "Kabar hoaks tentang vaksin menebar di media sosial."},
+        )
+        self.assertEqual(cek.status_code, 200)
+        self.assertEqual(cek.json()["matches"][0]["status"], "hoaks")
+
     def test_admin_flow_reject(self):
         submit = self.client.post(
             "/api/v1/clarification/submit",

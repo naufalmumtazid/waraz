@@ -30,6 +30,19 @@ def _normalize(text: str) -> str:
     return " ".join(text.lower().split()) if text else ""
 
 
+def normalize_claim_status(value: Optional[str]) -> str:
+    """Normalize claim classification values to the canonical WARAZ labels."""
+    if not value:
+        return "lainnya"
+
+    cleaned = _normalize(value)
+    if cleaned in {"sebagian benar", "sebagian_benar"}:
+        return "menyesatkan"
+    if cleaned in {"hoaks", "disinformasi", "benar", "menyesatkan", "lainnya"}:
+        return cleaned
+    return "lainnya"
+
+
 def similarity(left: str, right: str) -> float:
     """Normalized string similarity in [0.0, 1.0]."""
     l, r = _normalize(left), _normalize(right)
@@ -175,7 +188,7 @@ def review_claim(
 
         promoted = Clarification(
             klaim=claim.klaim,
-            status="aktif",
+            status=normalize_claim_status(claim.kategori),
             ringkasan=claim.ringkasan,
             tanggal=datetime.now(timezone.utc).strftime("%Y-%m-%d"),
             sumber=claim.sumber or "input_pengguna",

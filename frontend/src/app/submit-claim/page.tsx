@@ -56,8 +56,8 @@ export default function SubmitClaimPage() {
   };
 
   return (
-    <div className="min-h-screen bg-slate-950 text-slate-100">
-      <header className="border-b border-red-500/20 bg-slate-900/80 sticky top-0 z-40 backdrop-blur">
+    <div className="min-h-screen text-slate-100">
+      <header className="border-b border-red-500/20 bg-coal-900/80 sticky top-0 z-40 backdrop-blur">
         <div className="max-w-5xl mx-auto px-4 h-16 flex items-center justify-between">
           <div className="flex items-center gap-3">
             <div className="w-10 h-10 rounded-xl bg-red-500/15 border border-red-400/30 flex items-center justify-center text-red-300">
@@ -82,7 +82,7 @@ export default function SubmitClaimPage() {
       </header>
 
       <main className="max-w-5xl mx-auto px-4 py-10">
-        <div className="rounded-3xl border border-slate-800 bg-slate-900/80 p-6 shadow-lg shadow-red-950/20">
+        <div className="rounded-3xl border border-coal-800 bg-coal-900/80 p-6 shadow-lg shadow-red-950/20">
           <div className="inline-flex items-center gap-2 rounded-full border border-red-500/30 bg-red-500/10 px-3 py-1 text-xs font-medium text-red-200">
             <ShieldCheck className="w-3.5 h-3.5" />
             Pengajuan Klaim Anonim
@@ -103,7 +103,7 @@ export default function SubmitClaimPage() {
                 onChange={(event) => setClaim(event.target.value)}
                 rows={5}
                 placeholder="Contoh: Pemerintah terlihat memaksa evakuasi massal setelah alarm palsu..."
-                className="w-full rounded-2xl border border-slate-700 bg-slate-950/80 p-4 text-sm text-slate-100 focus:border-red-400 focus:ring-2 focus:ring-red-500/20 outline-none"
+                className="w-full rounded-2xl border border-coal-700 bg-coal-950/80 p-4 text-sm text-slate-100 focus:border-red-400 focus:ring-2 focus:ring-red-500/20 outline-none"
               />
             </div>
 
@@ -114,7 +114,7 @@ export default function SubmitClaimPage() {
                 onChange={(event) => setSummary(event.target.value)}
                 rows={3}
                 placeholder="Tambahkan penjelasan singkat terkait klaim tersebut..."
-                className="w-full rounded-2xl border border-slate-700 bg-slate-950/80 p-4 text-sm text-slate-100 focus:border-red-400 focus:ring-2 focus:ring-red-500/20 outline-none"
+                className="w-full rounded-2xl border border-coal-700 bg-coal-950/80 p-4 text-sm text-slate-100 focus:border-red-400 focus:ring-2 focus:ring-red-500/20 outline-none"
               />
             </div>
 
@@ -125,7 +125,7 @@ export default function SubmitClaimPage() {
                   value={source}
                   onChange={(event) => setSource(event.target.value)}
                   placeholder="Sumber atau kanal"
-                  className="w-full rounded-2xl border border-slate-700 bg-slate-950/80 p-3 text-sm text-slate-100 focus:border-red-400 focus:ring-2 focus:ring-red-500/20 outline-none"
+                  className="w-full rounded-2xl border border-coal-700 bg-coal-950/80 p-3 text-sm text-slate-100 focus:border-red-400 focus:ring-2 focus:ring-red-500/20 outline-none"
                 />
               </div>
 
@@ -134,7 +134,7 @@ export default function SubmitClaimPage() {
                 <select
                   value={category}
                   onChange={(event) => setCategory(event.target.value)}
-                  className="w-full rounded-2xl border border-slate-700 bg-slate-950/80 p-3 text-sm text-slate-100 focus:border-red-400 focus:ring-2 focus:ring-red-500/20 outline-none"
+                  className="w-full rounded-2xl border border-coal-700 bg-coal-950/80 p-3 text-sm text-slate-100 focus:border-red-400 focus:ring-2 focus:ring-red-500/20 outline-none"
                 >
                   <option value="lainnya">Lainnya</option>
                   <option value="hoaks">Hoaks</option>
@@ -151,11 +151,11 @@ export default function SubmitClaimPage() {
                 value={sourceUrl}
                 onChange={(event) => setSourceUrl(event.target.value)}
                 placeholder="https://..."
-                className="w-full rounded-2xl border border-slate-700 bg-slate-950/80 p-3 text-sm text-slate-100 focus:border-red-400 focus:ring-2 focus:ring-red-500/20 outline-none"
+                className="w-full rounded-2xl border border-coal-700 bg-coal-950/80 p-3 text-sm text-slate-100 focus:border-red-400 focus:ring-2 focus:ring-red-500/20 outline-none"
               />
             </div>
 
-            <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4 rounded-2xl border border-slate-700 bg-slate-950/60 p-4">
+            <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4 rounded-2xl border border-coal-700 bg-coal-950/60 p-4">
               <div>
                 <div className="text-sm font-medium text-slate-200">Kirim sebagai anonim</div>
                 <div className="text-xs text-slate-400">Data pengirim tidak dipublikasikan ke aplikasi.</div>
@@ -164,7 +164,7 @@ export default function SubmitClaimPage() {
               <button
                 type="button"
                 onClick={() => setAnonymous((prev) => !prev)}
-                className={`relative inline-flex h-7 w-12 items-center rounded-full transition ${anonymous ? "bg-red-500" : "bg-slate-700"}`}
+                className={`relative inline-flex h-7 w-12 items-center rounded-full transition ${anonymous ? "bg-red-500" : "bg-coal-700"}`}
                 aria-label="Toggle anonim"
               >
                 <span
@@ -180,7 +180,7 @@ export default function SubmitClaimPage() {
                   value={submitterAlias}
                   onChange={(event) => setSubmitterAlias(event.target.value)}
                   placeholder="Alias Anda"
-                  className="w-full rounded-2xl border border-slate-700 bg-slate-950/80 p-3 text-sm text-slate-100 focus:border-red-400 focus:ring-2 focus:ring-red-500/20 outline-none"
+                  className="w-full rounded-2xl border border-coal-700 bg-coal-950/80 p-3 text-sm text-slate-100 focus:border-red-400 focus:ring-2 focus:ring-red-500/20 outline-none"
                 />
               </div>
             )}

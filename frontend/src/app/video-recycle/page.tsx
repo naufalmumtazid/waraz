@@ -165,20 +165,20 @@ export default function VideoRecycleTrackerPage() {
   };
 
   return (
-    <div className="min-h-screen bg-slate-950 text-slate-100 flex flex-col font-sans">
+    <div className="min-h-screen text-slate-100 flex flex-col font-sans">
       {/* Top Navbar */}
-      <header className="border-b border-slate-800 bg-slate-900/80 backdrop-blur sticky top-0 z-40">
+      <header className="border-b border-red-900/40 bg-coal-900/80 backdrop-blur sticky top-0 z-40">
         <div className="max-w-7xl mx-auto px-4 h-16 flex items-center justify-between">
           <div className="flex items-center gap-3">
-            <div className="w-10 h-10 rounded-xl bg-blue-600/20 border border-blue-500/30 flex items-center justify-center text-blue-400">
+            <div className="w-10 h-10 rounded-xl bg-red-600/20 border border-red-500/30 flex items-center justify-center text-red-400 shadow-lg shadow-red-600/25">
               <Video className="w-5 h-5" />
             </div>
             <div>
               <div className="flex items-center gap-2">
-                <span className="font-bold tracking-tight text-white text-lg">
+                <span className="font-bold tracking-tight text-red-400 text-lg">
                   WARAZ
                 </span>
-                <span className="text-xs px-2 py-0.5 rounded-full bg-blue-500/10 text-blue-400 border border-blue-500/20 font-mono">
+                <span className="text-xs px-2 py-0.5 rounded-full bg-red-500/10 text-red-400 border border-red-500/20 font-mono">
                   F2
                 </span>
               </div>
@@ -189,13 +189,13 @@ export default function VideoRecycleTrackerPage() {
           </div>
 
           <div className="flex items-center gap-3">
-            <div className="flex items-center bg-slate-800/80 p-1 rounded-lg border border-slate-700 text-xs">
+            <div className="flex items-center bg-coal-800/80 p-1 rounded-lg border border-coal-700 text-xs">
               <button
                 type="button"
                 onClick={() => setSystemMode("demo")}
                 className={`px-3 py-1.5 rounded-md transition font-medium ${
                   systemMode === "demo"
-                    ? "bg-blue-600 text-white shadow"
+                    ? "bg-red-600 text-white shadow"
                     : "text-slate-400 hover:text-slate-200"
                 }`}
               >
@@ -221,10 +221,10 @@ export default function VideoRecycleTrackerPage() {
       <div className="max-w-7xl mx-auto px-4 py-8 flex-1 grid grid-cols-1 lg:grid-cols-4 gap-8 w-full">
         {/* Left Sidebar: Archive Management */}
         <aside className="lg:col-span-1 space-y-6">
-          <div className="bg-slate-900 border border-slate-800 rounded-2xl p-5 shadow-sm space-y-4">
+          <div className="bg-coal-900 border border-coal-800 rounded-2xl p-5 shadow-sm space-y-4">
             <div className="flex items-center justify-between">
               <h2 className="font-semibold text-sm text-slate-200 flex items-center gap-2">
-                <SlidersHorizontal className="w-4 h-4 text-blue-400" />
+                <SlidersHorizontal className="w-4 h-4 text-red-400" />
                 Status Sistem
               </h2>
               <span
@@ -249,7 +249,7 @@ export default function VideoRecycleTrackerPage() {
                 type="button"
                 onClick={handleSeedDemo}
                 disabled={loadingArchives}
-                className="w-full py-2.5 px-3 rounded-xl bg-blue-600/10 hover:bg-blue-600/20 border border-blue-500/30 text-blue-400 text-xs font-medium flex items-center justify-center gap-2 transition"
+                className="w-full py-2.5 px-3 rounded-xl bg-red-600/10 hover:bg-red-600/20 border border-red-500/30 text-red-400 text-xs font-medium flex items-center justify-center gap-2 transition"
               >
                 <RefreshCw
                   className={`w-3.5 h-3.5 ${loadingArchives ? "animate-spin" : ""}`}
@@ -260,13 +260,13 @@ export default function VideoRecycleTrackerPage() {
           </div>
 
           {/* Stored Archives List */}
-          <div className="bg-slate-900 border border-slate-800 rounded-2xl p-5 shadow-sm space-y-4">
+          <div className="bg-coal-900 border border-coal-800 rounded-2xl p-5 shadow-sm space-y-4">
             <div className="flex items-center justify-between">
               <h3 className="font-semibold text-sm text-slate-200 flex items-center gap-2">
                 <FileCheck2 className="w-4 h-4 text-emerald-400" />
                 Arsip Tersimpan
               </h3>
-              <span className="text-xs bg-slate-800 px-2 py-0.5 rounded-full text-slate-300 font-mono">
+              <span className="text-xs bg-coal-800 px-2 py-0.5 rounded-full text-slate-300 font-mono">
                 {archives.length}
               </span>
             </div>
@@ -280,7 +280,7 @@ export default function VideoRecycleTrackerPage() {
                 archives.map((item) => (
                   <div
                     key={item.id}
-                    className="p-3 bg-slate-800/40 border border-slate-700/50 rounded-xl space-y-2 hover:border-slate-600 transition"
+                    className="p-3 bg-coal-800/40 border border-coal-700/50 rounded-xl space-y-2 hover:border-coal-600 transition"
                   >
                     <div className="flex items-start justify-between gap-2">
                       <p className="text-xs font-medium text-slate-200 line-clamp-2">
@@ -318,7 +318,7 @@ export default function VideoRecycleTrackerPage() {
                     </div>
 
                     {item.thumbnail_filename && (
-                      <div className="rounded-lg overflow-hidden border border-slate-700 mt-2 bg-black">
+                      <div className="rounded-lg overflow-hidden border border-coal-700 mt-2 bg-black">
                         {/* eslint-disable-next-line @next/next/no-img-element */}
                         <img
                           src={videoApi.getThumbnailUrl(
@@ -340,13 +340,13 @@ export default function VideoRecycleTrackerPage() {
         {/* Center / Right Content: Tabs */}
         <main className="lg:col-span-3 space-y-6">
           {/* Tabs bar */}
-          <div className="flex border-b border-slate-800 gap-4">
+          <div className="flex border-b border-coal-800 gap-4">
             <button
               type="button"
               onClick={() => setActiveTab("analisis")}
               className={`pb-3 text-sm font-semibold flex items-center gap-2 border-b-2 transition ${
                 activeTab === "analisis"
-                  ? "border-blue-500 text-blue-400"
+                  ? "border-red-500 text-red-400"
                   : "border-transparent text-slate-400 hover:text-slate-200"
               }`}
             >
@@ -358,7 +358,7 @@ export default function VideoRecycleTrackerPage() {
               onClick={() => setActiveTab("arsip")}
               className={`pb-3 text-sm font-semibold flex items-center gap-2 border-b-2 transition ${
                 activeTab === "arsip"
-                  ? "border-blue-500 text-blue-400"
+                  ? "border-red-500 text-red-400"
                   : "border-transparent text-slate-400 hover:text-slate-200"
               }`}
             >
@@ -370,7 +370,7 @@ export default function VideoRecycleTrackerPage() {
           {/* TAB 1: Analisis Video Uji */}
           {activeTab === "analisis" && (
             <div className="space-y-6">
-              <div className="bg-slate-900 border border-slate-800 rounded-2xl p-6 shadow-sm">
+              <div className="bg-coal-900 border border-coal-800 rounded-2xl p-6 shadow-sm">
                 <h3 className="font-semibold text-base text-slate-100 mb-1">
                   Unggah Berkas Video yang Ingin Diperiksa
                 </h3>
@@ -380,7 +380,7 @@ export default function VideoRecycleTrackerPage() {
                 </p>
 
                 <form onSubmit={handleDetect} className="space-y-5">
-                  <div className="border-2 border-dashed border-slate-700 hover:border-blue-500/60 rounded-2xl p-6 text-center transition bg-slate-950/40">
+                  <div className="border-2 border-dashed border-coal-700 hover:border-red-500/60 rounded-2xl p-6 text-center transition bg-coal-950/40">
                     <input
                       ref={fileInputRef}
                       type="file"
@@ -398,7 +398,7 @@ export default function VideoRecycleTrackerPage() {
                       htmlFor="video-uploader"
                       className="cursor-pointer flex flex-col items-center justify-center gap-3"
                     >
-                      <div className="w-12 h-12 rounded-2xl bg-blue-600/10 border border-blue-500/20 text-blue-400 flex items-center justify-center">
+                      <div className="w-12 h-12 rounded-2xl bg-red-600/10 border border-red-500/20 text-red-400 flex items-center justify-center">
                         <Upload className="w-6 h-6" />
                       </div>
                       <div>
@@ -415,9 +415,9 @@ export default function VideoRecycleTrackerPage() {
                   </div>
 
                   {selectedFile && (
-                    <div className="flex items-center justify-between p-3.5 bg-blue-950/30 border border-blue-800/40 rounded-xl">
+                    <div className="flex items-center justify-between p-3.5 bg-red-950/30 border border-red-800/40 rounded-xl">
                       <div className="flex items-center gap-3">
-                        <Video className="w-4 h-4 text-blue-400" />
+                        <Video className="w-4 h-4 text-red-400" />
                         <span className="text-xs font-mono text-slate-200">
                           {selectedFile.name} (
                           {(selectedFile.size / (1024 * 1024)).toFixed(2)} MB)
@@ -434,8 +434,8 @@ export default function VideoRecycleTrackerPage() {
                   )}
 
                   {detectError && (
-                    <div className="p-4 bg-red-950/40 border border-red-800/50 rounded-xl flex items-start gap-3 text-red-300 text-xs">
-                      <AlertTriangle className="w-4 h-4 text-red-400 shrink-0 mt-0.5" />
+                    <div className="p-4 bg-orange-950/40 border border-orange-800/50 rounded-xl flex items-start gap-3 text-orange-300 text-xs">
+                      <AlertTriangle className="w-4 h-4 text-orange-400 shrink-0 mt-0.5" />
                       <span>{detectError}</span>
                     </div>
                   )}
@@ -444,7 +444,7 @@ export default function VideoRecycleTrackerPage() {
                     <button
                       type="submit"
                       disabled={!selectedFile || detecting}
-                      className="flex-1 py-3 px-4 rounded-xl bg-blue-600 hover:bg-blue-500 disabled:opacity-50 text-white font-medium text-sm flex items-center justify-center gap-2 transition shadow-lg shadow-blue-600/20"
+                      className="flex-1 py-3 px-4 rounded-xl bg-red-600 hover:bg-red-500 disabled:opacity-50 text-white font-medium text-sm flex items-center justify-center gap-2 transition shadow-lg shadow-red-600/20"
                     >
                       {detecting ? (
                         <>
@@ -462,7 +462,7 @@ export default function VideoRecycleTrackerPage() {
                       <button
                         type="button"
                         onClick={handleResetAnalysis}
-                        className="px-4 py-3 rounded-xl border border-slate-700 hover:bg-slate-800 text-slate-300 text-sm font-medium transition"
+                        className="px-4 py-3 rounded-xl border border-coal-700 hover:bg-coal-800 text-slate-300 text-sm font-medium transition"
                       >
                         Bersihkan
                       </button>
@@ -473,8 +473,8 @@ export default function VideoRecycleTrackerPage() {
 
               {/* Hasil Analisis Deteksi */}
               {detectionResult && (
-                <div className="bg-slate-900 border border-slate-800 rounded-2xl p-6 shadow-sm space-y-6">
-                  <div className="flex items-center justify-between border-b border-slate-800 pb-4">
+                <div className="bg-coal-900 border border-coal-800 rounded-2xl p-6 shadow-sm space-y-6">
+                  <div className="flex items-center justify-between border-b border-coal-800 pb-4">
                     <div>
                       <h4 className="font-semibold text-base text-slate-100">
                         Hasil Analisis Daur Ulang Video
@@ -485,7 +485,7 @@ export default function VideoRecycleTrackerPage() {
                     </div>
 
                     {detectionResult.status === "daur_ulang" ? (
-                      <div className="flex items-center gap-2 px-3 py-1.5 rounded-full bg-red-500/10 border border-red-500/30 text-red-400 text-xs font-semibold">
+                      <div className="flex items-center gap-2 px-3 py-1.5 rounded-full bg-orange-500/15 border border-orange-400/40 text-orange-300 text-xs font-semibold">
                         <ShieldAlert className="w-4 h-4" />
                         KEMUNGKINAN DAUR ULANG
                       </div>
@@ -499,7 +499,7 @@ export default function VideoRecycleTrackerPage() {
 
                   {/* 4 Metric Cards */}
                   <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-                    <div className="p-4 bg-slate-950/60 rounded-xl border border-slate-800">
+                    <div className="p-4 bg-coal-950/60 rounded-xl border border-coal-800">
                       <p className="text-[11px] text-slate-400 uppercase tracking-wider font-semibold">
                         Skor Kemiripan
                       </p>
@@ -508,16 +508,16 @@ export default function VideoRecycleTrackerPage() {
                       </p>
                     </div>
 
-                    <div className="p-4 bg-slate-950/60 rounded-xl border border-slate-800">
+                    <div className="p-4 bg-coal-950/60 rounded-xl border border-coal-800">
                       <p className="text-[11px] text-slate-400 uppercase tracking-wider font-semibold">
                         Tingkat Keyakinan
                       </p>
-                      <p className="text-xl font-bold text-blue-400 mt-1 capitalize">
+                      <p className="text-xl font-bold text-red-400 mt-1 capitalize">
                         {detectionResult.keyakinan}
                       </p>
                     </div>
 
-                    <div className="p-4 bg-slate-950/60 rounded-xl border border-slate-800">
+                    <div className="p-4 bg-coal-950/60 rounded-xl border border-coal-800">
                       <p className="text-[11px] text-slate-400 uppercase tracking-wider font-semibold">
                         Frame Cocok / Total
                       </p>
@@ -526,7 +526,7 @@ export default function VideoRecycleTrackerPage() {
                       </p>
                     </div>
 
-                    <div className="p-4 bg-slate-950/60 rounded-xl border border-slate-800">
+                    <div className="p-4 bg-coal-950/60 rounded-xl border border-coal-800">
                       <p className="text-[11px] text-slate-400 uppercase tracking-wider font-semibold">
                         Consecutive Run
                       </p>
@@ -536,8 +536,8 @@ export default function VideoRecycleTrackerPage() {
                     </div>
                   </div>
 
-                  <div className="p-3.5 bg-slate-800/40 border border-slate-700/50 rounded-xl text-xs text-slate-300 flex items-start gap-2.5">
-                    <Info className="w-4 h-4 text-blue-400 shrink-0 mt-0.5" />
+                  <div className="p-3.5 bg-coal-800/40 border border-coal-700/50 rounded-xl text-xs text-slate-300 flex items-start gap-2.5">
+                    <Info className="w-4 h-4 text-red-400 shrink-0 mt-0.5" />
                     <span>{detectionResult.catatan}</span>
                   </div>
 
@@ -548,11 +548,11 @@ export default function VideoRecycleTrackerPage() {
                     </h5>
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
                       {/* Left: Query Video Thumbnail */}
-                      <div className="bg-slate-950 border border-slate-800 rounded-xl p-4 space-y-3">
+                      <div className="bg-coal-950 border border-coal-800 rounded-xl p-4 space-y-3">
                         <p className="text-xs font-medium text-slate-300">
                           Video yang Diperiksa (Input)
                         </p>
-                        <div className="aspect-video bg-black rounded-lg overflow-hidden border border-slate-800 flex items-center justify-center">
+                        <div className="aspect-video bg-black rounded-lg overflow-hidden border border-coal-800 flex items-center justify-center">
                           {detectionResult.query_thumbnail_filename ? (
                             // eslint-disable-next-line @next/next/no-img-element
                             <img
@@ -572,14 +572,14 @@ export default function VideoRecycleTrackerPage() {
                       </div>
 
                       {/* Right: Archive Match Thumbnail */}
-                      <div className="bg-slate-950 border border-slate-800 rounded-xl p-4 space-y-3">
+                      <div className="bg-coal-950 border border-coal-800 rounded-xl p-4 space-y-3">
                         <p className="text-xs font-medium text-slate-300">
                           Video Acuan Asli di Basis Arsip
                         </p>
                         {detectionResult.status === "daur_ulang" &&
                         detectionResult.arsip_tercocok ? (
                           <>
-                            <div className="aspect-video bg-black rounded-lg overflow-hidden border border-slate-800 flex items-center justify-center">
+                            <div className="aspect-video bg-black rounded-lg overflow-hidden border border-coal-800 flex items-center justify-center">
                               {detectionResult.arsip_tercocok.thumbnail_filename ? (
                                 // eslint-disable-next-line @next/next/no-img-element
                                 <img
@@ -617,7 +617,7 @@ export default function VideoRecycleTrackerPage() {
                                 {detectionResult.arsip_tercocok.sumber || "-"}
                               </p>
                               {detectionResult.arsip_tercocok.tautan && (
-                                <p className="flex items-center gap-1.5 text-blue-400 mt-1">
+                                <p className="flex items-center gap-1.5 text-red-400 mt-1">
                                   <ExternalLink className="w-3.5 h-3.5" />
                                   <a
                                     href={detectionResult.arsip_tercocok.tautan}
@@ -632,7 +632,7 @@ export default function VideoRecycleTrackerPage() {
                             </div>
                           </>
                         ) : (
-                          <div className="aspect-video bg-slate-900/50 rounded-lg border border-dashed border-slate-800 flex items-center justify-center p-4 text-center">
+                          <div className="aspect-video bg-coal-900/50 rounded-lg border border-dashed border-coal-800 flex items-center justify-center p-4 text-center">
                             <span className="text-xs text-slate-500">
                               Tidak ada klip arsip yang cocok secara sekuensial.
                             </span>
@@ -643,7 +643,7 @@ export default function VideoRecycleTrackerPage() {
                   </div>
 
                   {/* Ethical guardrail disclaimer */}
-                  <div className="text-[11px] text-slate-500 border-t border-slate-800 pt-3 flex items-center gap-2">
+                  <div className="text-[11px] text-slate-500 border-t border-coal-800 pt-3 flex items-center gap-2">
                     <ShieldCheck className="w-4 h-4 text-slate-400" />
                     <span>
                       <strong>Prinsip Etika WARAZ:</strong> Hasil deteksi
@@ -659,7 +659,7 @@ export default function VideoRecycleTrackerPage() {
 
           {/* TAB 2: Pendaftaran Arsip Baru */}
           {activeTab === "arsip" && (
-            <div className="bg-slate-900 border border-slate-800 rounded-2xl p-6 shadow-sm space-y-6">
+            <div className="bg-coal-900 border border-coal-800 rounded-2xl p-6 shadow-sm space-y-6">
               <div>
                 <h3 className="font-semibold text-base text-slate-100">
                   Daftarkan Klip Video ke Basis Arsip WARAZ
@@ -675,13 +675,13 @@ export default function VideoRecycleTrackerPage() {
                   className={`p-4 rounded-xl flex items-start gap-3 text-xs border ${
                     regMessage.type === "success"
                       ? "bg-emerald-950/40 border-emerald-800/50 text-emerald-300"
-                      : "bg-red-950/40 border-red-800/50 text-red-300"
+                      : "bg-orange-950/40 border-orange-800/50 text-orange-300"
                   }`}
                 >
                   {regMessage.type === "success" ? (
                     <CheckCircle2 className="w-4 h-4 text-emerald-400 shrink-0 mt-0.5" />
                   ) : (
-                    <AlertTriangle className="w-4 h-4 text-red-400 shrink-0 mt-0.5" />
+                    <AlertTriangle className="w-4 h-4 text-orange-400 shrink-0 mt-0.5" />
                   )}
                   <span>{regMessage.text}</span>
                 </div>
@@ -697,7 +697,7 @@ export default function VideoRecycleTrackerPage() {
                     type="file"
                     accept="video/mp4,video/mkv,video/webm,video/avi"
                     onChange={(e) => setRegFile(e.target.files?.[0] || null)}
-                    className="w-full text-xs text-slate-300 file:mr-4 file:py-2.5 file:px-4 file:rounded-xl file:border-0 file:text-xs file:font-semibold file:bg-slate-800 file:text-slate-200 hover:file:bg-slate-700 bg-slate-950 border border-slate-800 rounded-xl p-2 focus:outline-none"
+                    className="w-full text-xs text-slate-300 file:mr-4 file:py-2.5 file:px-4 file:rounded-xl file:border-0 file:text-xs file:font-semibold file:bg-coal-800 file:text-slate-200 hover:file:bg-coal-700 bg-coal-950 border border-coal-800 rounded-xl p-2 focus:outline-none"
                   />
                 </div>
 
@@ -710,7 +710,7 @@ export default function VideoRecycleTrackerPage() {
                     value={regTitle}
                     onChange={(e) => setRegTitle(e.target.value)}
                     placeholder="Contoh: Latihan Penanggulangan Bencana BPBD 2024"
-                    className="w-full text-xs bg-slate-950 border border-slate-800 rounded-xl px-4 py-2.5 text-slate-200 focus:outline-none focus:border-blue-500"
+                    className="w-full text-xs bg-coal-950 border border-coal-800 rounded-xl px-4 py-2.5 text-slate-200 focus:outline-none focus:border-red-500"
                   />
                 </div>
 
@@ -723,7 +723,7 @@ export default function VideoRecycleTrackerPage() {
                       type="date"
                       value={regDate}
                       onChange={(e) => setRegDate(e.target.value)}
-                      className="w-full text-xs bg-slate-950 border border-slate-800 rounded-xl px-4 py-2.5 text-slate-200 focus:outline-none focus:border-blue-500"
+                      className="w-full text-xs bg-coal-950 border border-coal-800 rounded-xl px-4 py-2.5 text-slate-200 focus:outline-none focus:border-red-500"
                     />
                   </div>
 
@@ -736,7 +736,7 @@ export default function VideoRecycleTrackerPage() {
                       value={regSource}
                       onChange={(e) => setRegSource(e.target.value)}
                       placeholder="Contoh: Humas BNPB / YouTube Resmi"
-                      className="w-full text-xs bg-slate-950 border border-slate-800 rounded-xl px-4 py-2.5 text-slate-200 focus:outline-none focus:border-blue-500"
+                      className="w-full text-xs bg-coal-950 border border-coal-800 rounded-xl px-4 py-2.5 text-slate-200 focus:outline-none focus:border-red-500"
                     />
                   </div>
                 </div>
@@ -750,14 +750,14 @@ export default function VideoRecycleTrackerPage() {
                     value={regUrl}
                     onChange={(e) => setRegUrl(e.target.value)}
                     placeholder="https://bnpb.go.id/berita/latihan-banjir"
-                    className="w-full text-xs bg-slate-950 border border-slate-800 rounded-xl px-4 py-2.5 text-slate-200 focus:outline-none focus:border-blue-500"
+                    className="w-full text-xs bg-coal-950 border border-coal-800 rounded-xl px-4 py-2.5 text-slate-200 focus:outline-none focus:border-red-500"
                   />
                 </div>
 
                 <button
                   type="submit"
                   disabled={registering}
-                  className="w-full py-3 px-4 rounded-xl bg-emerald-600 hover:bg-emerald-500 disabled:opacity-50 text-white font-medium text-sm flex items-center justify-center gap-2 transition shadow-lg shadow-emerald-600/20"
+                  className="w-full py-3 px-4 rounded-xl bg-red-600 hover:bg-red-500 disabled:opacity-50 text-white font-medium text-sm flex items-center justify-center gap-2 transition shadow-lg shadow-red-600/30"
                 >
                   {registering ? (
                     <>

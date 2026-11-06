@@ -79,8 +79,8 @@ export default function AdminClaimsPage() {
   };
 
   return (
-    <div className="min-h-screen bg-slate-950 text-slate-100">
-      <header className="border-b border-red-500/20 bg-slate-900/80 sticky top-0 z-40 backdrop-blur">
+    <div className="min-h-screen text-slate-100">
+      <header className="border-b border-red-500/20 bg-coal-900/80 sticky top-0 z-40 backdrop-blur">
         <div className="max-w-6xl mx-auto px-4 h-16 flex items-center justify-between">
           <div className="flex items-center gap-3">
             <div className="w-10 h-10 rounded-xl bg-red-500/15 border border-red-400/30 flex items-center justify-center text-red-300">
@@ -106,7 +106,7 @@ export default function AdminClaimsPage() {
 
       <main className="max-w-6xl mx-auto px-4 py-10">
         {!token ? (
-          <div className="max-w-xl mx-auto rounded-3xl border border-slate-800 bg-slate-900/80 p-6 shadow-lg shadow-red-950/20">
+          <div className="max-w-xl mx-auto rounded-3xl border border-coal-800 bg-coal-900/80 p-6 shadow-lg shadow-red-950/20">
             <h1 className="text-2xl font-extrabold text-white">Login admin</h1>
             <p className="mt-2 text-sm text-slate-400">
               Hanya admin yang boleh meninjau dan menyetujui klaim baru sebelum masuk ke basis klarifikasi.
@@ -118,7 +118,7 @@ export default function AdminClaimsPage() {
                 <input
                   value={email}
                   onChange={(event) => setEmail(event.target.value)}
-                  className="w-full rounded-2xl border border-slate-700 bg-slate-950/80 p-3 text-sm text-slate-100 outline-none focus:border-red-400 focus:ring-2 focus:ring-red-500/20"
+                  className="w-full rounded-2xl border border-coal-700 bg-coal-950/80 p-3 text-sm text-slate-100 outline-none focus:border-red-400 focus:ring-2 focus:ring-red-500/20"
                 />
               </div>
 
@@ -128,7 +128,7 @@ export default function AdminClaimsPage() {
                   type="password"
                   value={password}
                   onChange={(event) => setPassword(event.target.value)}
-                  className="w-full rounded-2xl border border-slate-700 bg-slate-950/80 p-3 text-sm text-slate-100 outline-none focus:border-red-400 focus:ring-2 focus:ring-red-500/20"
+                  className="w-full rounded-2xl border border-coal-700 bg-coal-950/80 p-3 text-sm text-slate-100 outline-none focus:border-red-400 focus:ring-2 focus:ring-red-500/20"
                 />
               </div>
 
@@ -149,7 +149,7 @@ export default function AdminClaimsPage() {
           </div>
         ) : (
           <div className="space-y-6">
-            <div className="rounded-3xl border border-slate-800 bg-slate-900/80 p-6 shadow-lg shadow-red-950/20">
+            <div className="rounded-3xl border border-coal-800 bg-coal-900/80 p-6 shadow-lg shadow-red-950/20">
               <div className="flex items-center justify-between gap-4 flex-wrap">
                 <div>
                   <div className="text-xs uppercase tracking-[0.2em] text-red-200">Panel admin</div>
@@ -162,7 +162,7 @@ export default function AdminClaimsPage() {
                     setToken(null);
                     window.localStorage.removeItem("waraz-admin-token");
                   }}
-                  className="rounded-xl border border-slate-700 bg-slate-950 px-4 py-2 text-sm text-slate-300 hover:border-slate-500"
+                  className="rounded-xl border border-coal-700 bg-coal-950 px-4 py-2 text-sm text-slate-300 hover:border-coal-600"
                 >
                   Logout
                 </button>
@@ -182,17 +182,17 @@ export default function AdminClaimsPage() {
             </div>
 
             {loadingClaims ? (
-              <div className="rounded-3xl border border-slate-800 bg-slate-900/80 p-6 text-slate-400">
+              <div className="rounded-3xl border border-coal-800 bg-coal-900/80 p-6 text-slate-400">
                 Memuat usulan klaim...
               </div>
             ) : claims.length === 0 ? (
-              <div className="rounded-3xl border border-dashed border-slate-700 bg-slate-900/60 p-6 text-slate-400">
+              <div className="rounded-3xl border border-dashed border-coal-700 bg-coal-900/60 p-6 text-slate-400">
                 Belum ada usulan klaim yang menunggu review.
               </div>
             ) : (
               <div className="space-y-4">
                 {claims.map((claim) => (
-                  <div key={claim.id} className="rounded-3xl border border-slate-800 bg-slate-900/80 p-5">
+                  <div key={claim.id} className="rounded-3xl border border-coal-800 bg-coal-900/80 p-5">
                     <div className="flex justify-between gap-4 flex-wrap">
                       <div>
                         <div className="text-[11px] uppercase tracking-[0.2em] text-red-200">
@@ -229,7 +229,7 @@ export default function AdminClaimsPage() {
                       <textarea
                         id={`note-${claim.id}`}
                         placeholder="Catatan review admin..."
-                        className="flex-1 rounded-2xl border border-slate-700 bg-slate-950/80 p-3 text-sm text-slate-100 outline-none focus:border-red-400 focus:ring-2 focus:ring-red-500/20"
+                        className="flex-1 rounded-2xl border border-coal-700 bg-coal-950/80 p-3 text-sm text-slate-100 outline-none focus:border-red-400 focus:ring-2 focus:ring-red-500/20"
                       />
 
                       <div className="flex gap-2">

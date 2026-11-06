@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 :root {
-  --background: #0b0b12;
+  --background: #0b0607;
   --foreground: #f8fafc;
   --primary: #fb5858;
   --primary-soft: rgba(251, 88, 88, 0.12);
@@ -16,7 +16,22 @@ html {
 
 body {
   color: var(--foreground);
-  background: radial-gradient(circle at top, rgba(251, 88, 88, 0.12), transparent 30%), var(--background);
+  background-color: var(--background);
+  background-image: radial-gradient(
+      circle at top,
+      rgba(251, 88, 88, 0.12),
+      transparent 30%
+    ),
+    radial-gradient(
+      1100px 520px at 50% -10%,
+      rgba(239, 68, 68, 0.16),
+      transparent 62%
+    ),
+    radial-gradient(
+      900px 480px at 88% 108%,
+      rgba(249, 115, 22, 0.1),
+      transparent 60%
+    );
   font-family: Arial, Helvetica, sans-serif;
 }
 

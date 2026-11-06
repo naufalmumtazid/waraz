@@ -6,7 +6,17 @@ module.exports = {
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        coal: {
+          950: "#0b0607",
+          900: "#160e10",
+          800: "#2a181b",
+          700: "#3d2428",
+          600: "#57343a",
+        },
+      },
+    },
   },
   plugins: [],
 };

@@ -11,6 +11,7 @@ from .models import (
     ClarificationResult,
     FrameHash,
     MitigationCard,
+    PublicClaim,
     Technique,
     TechniqueResult,
     User,
@@ -28,6 +29,7 @@ from .models import (
     Klarifikasi,
     Pengguna,
     Teknik,
+    UsulanKlaim,
 )
 
 __all__ = [

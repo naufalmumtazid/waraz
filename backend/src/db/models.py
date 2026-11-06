@@ -8,6 +8,7 @@ import uuid
 from datetime import datetime, timezone
 
 from sqlalchemy import (
+    Boolean,
     CheckConstraint,
     Column,
     Float,
@@ -193,6 +194,35 @@ class ClarificationResult(Base):
     )
 
 
+class PublicClaim(Base):
+    """Usulan klaim publik yang menunggu persetujuan admin.
+
+    Klaim yang disetujui akan dipromosikan menjadi entri `klarifikasi`
+    sehingga langsung bisa ditemukan oleh endpoint `/clarification/check`.
+    """
+    __tablename__ = "usulan_klaim"
+
+    id = Column(String, primary_key=True, default=_new_id)
+    klaim = Column(Text, nullable=False)
+    ringkasan = Column(Text, nullable=True)
+    kategori = Column(String, nullable=True)
+    sumber = Column(String, nullable=True)
+    tautan_sumber = Column(String, nullable=True)
+    anonim = Column(Boolean, nullable=False, default=True)
+    alias_pemesan = Column(String, nullable=True)
+    status = Column(String, nullable=False, default="menunggu")
+    catatan_review = Column(Text, nullable=True)
+    dibuat_pada = Column(String, nullable=False, default=_now_iso)
+    ditinjau_pada = Column(String, nullable=True)
+
+    __table_args__ = (
+        CheckConstraint(
+            "status IN ('menunggu','disetujui','ditolak')",
+            name="ck_usulan_klaim_status",
+        ),
+    )
+
+
 # ─────────────────────────────────────────────────────────────
 # Feature 3: Manipulation Technique Mapping
 # ─────────────────────────────────────────────────────────────
@@ -250,6 +280,7 @@ HashFrame = FrameHash
 HasilVideo = VideoResult
 Klarifikasi = Clarification
 HasilKlarifikasi = ClarificationResult
+UsulanKlaim = PublicClaim
 Teknik = Technique
 HasilTeknik = TechniqueResult
 KartuKlarifikasi = MitigationCard

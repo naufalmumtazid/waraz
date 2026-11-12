@@ -266,3 +266,129 @@ export const videoApi = {
     return res.json();
   },
 };
+
+// ─────────────────────────────────────────────────────────────
+// Feature 3: Manipulation Technique Mapping Interfaces & API
+// ─────────────────────────────────────────────────────────────
+
+export interface EvidenceSpan {
+  quote: string;
+  start_char?: number | null;
+  end_char?: number | null;
+  explanation?: string | null;
+}
+
+export interface TechniqueScore {
+  technique_id: string;
+  technique_name: string;
+  category: string;
+  score: number;
+  detected: boolean;
+  definition: string;
+  evidences: EvidenceSpan[];
+}
+
+export interface ManipulationAnalysisResponse {
+  text: string;
+  is_manipulative: boolean;
+  overall_manipulation_score: number;
+  summary: string;
+  classification: string;
+  confidence_threshold: number;
+  detected_techniques_count: number;
+  techniques: TechniqueScore[];
+  engine_used: string;
+  analyzed_at: string;
+  case_id?: string | null;
+}
+
+export interface TechniqueDefinition {
+  id: string;
+  name: string;
+  name_id: string;
+  category: string;
+  definition: string;
+  indicators: string[];
+  example: string;
+}
+
+export interface PresetExample {
+  id: string;
+  title: string;
+  text: string;
+  expected_labels: string[];
+  is_manipulation: boolean;
+}
+
+export const manipulationApi = {
+  analyze: async (
+    text: string,
+    confidenceThreshold = 0.45,
+    caseId?: string
+  ): Promise<ManipulationAnalysisResponse> => {
+    const res = await fetch(`${API_BASE_URL}/api/v1/manipulation/analyze`, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        text,
+        confidence_threshold: confidenceThreshold,
+        case_id: caseId,
+      }),
+    });
+    if (!res.ok) {
+      const err = await res.json().catch(() => ({}));
+      throw new Error(err.detail || "Gagal menganalisis teknik manipulasi.");
+    }
+    return res.json();
+  },
+
+  getTaxonomy: async (): Promise<TechniqueDefinition[]> => {
+    const res = await fetch(`${API_BASE_URL}/api/v1/manipulation/taxonomy`);
+    if (!res.ok) {
+      throw new Error("Gagal mengambil taksonomi teknik manipulasi.");
+    }
+    return res.json();
+  },
+
+  getPresets: async (): Promise<PresetExample[]> => {
+    const res = await fetch(`${API_BASE_URL}/api/v1/manipulation/presets`);
+    if (!res.ok) {
+      throw new Error("Gagal mengambil preset teknik manipulasi.");
+    }
+    return res.json();
+  },
+
+  overrideTechnique: async (
+    caseId: string,
+    techniqueId: string,
+    statusVal: "diterima" | "diubah" | "diabaikan",
+    analystNote?: string
+  ): Promise<{ status: string; kasus_id: string; teknik_id: string; status_tinjau: string }> => {
+    const res = await fetch(
+      `${API_BASE_URL}/api/v1/manipulation/cases/${caseId}/override`,
+      {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          technique_id: techniqueId,
+          status: statusVal,
+          analyst_note: analystNote,
+        }),
+      }
+    );
+    if (!res.ok) {
+      const err = await res.json().catch(() => ({}));
+      throw new Error(err.detail || "Gagal mengubah status teknik.");
+    }
+    return res.json();
+  },
+};
+
+// Aliases for unified access
+export const warazApi = {
+  ...videoApi,
+  ...issueClarificationApi,
+  ...claimSubmissionApi,
+  ...adminClaimsApi,
+  ...manipulationApi,
+};

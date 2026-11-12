@@ -18,10 +18,12 @@ try:
     from src.db.koneksi import init_db
     from src.video.router import router as video_router
     from src.clarification.router import router as clarification_router
+    from src.manipulation.router import router as manipulation_router
 except ImportError:
     from backend.src.db.koneksi import init_db
     from backend.src.video.router import router as video_router
     from backend.src.clarification.router import router as clarification_router
+    from backend.src.manipulation.router import router as manipulation_router
 
 logging.basicConfig(
     level=logging.INFO,
@@ -58,6 +60,7 @@ app.add_middleware(
 # Register router
 app.include_router(video_router)
 app.include_router(clarification_router)
+app.include_router(manipulation_router)
 
 
 @app.get("/", summary="Root API WARAZ")
@@ -68,8 +71,9 @@ def root():
         "versi": "0.1.0",
         "status": "aktif",
         "fitur_tersedia": [
-            "F2: Pelacak Video Daur Ulang (/api/v1/video)",
             "F1: Issue Clarification (/api/v1/clarification)",
+            "F2: Pelacak Video Daur Ulang (/api/v1/video)",
+            "F3: Peta Teknik Manipulasi (/api/v1/manipulation)",
         ],
     }
 

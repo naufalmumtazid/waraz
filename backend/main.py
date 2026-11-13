@@ -5,25 +5,23 @@ import sys
 from contextlib import asynccontextmanager
 from pathlib import Path
 
-# Pastikan folder backend masuk ke sys.path agar impor `src.*` berjalan
-# baik saat dijalankan dari root repo maupun dari dalam folder backend
+# Pastikan folder backend dan root repo masuk ke sys.path agar impor `src.*`
+# bekerja saat aplikasi dijalankan dari root repo, dari folder backend,
+# atau saat di-deploy di platform seperti Vercel.
 _BACKEND_DIR = Path(__file__).resolve().parent
-if str(_BACKEND_DIR) not in sys.path:
-    sys.path.insert(0, str(_BACKEND_DIR))
+_PROJECT_ROOT = _BACKEND_DIR.parent
+for _candidate in (_BACKEND_DIR, _PROJECT_ROOT):
+    candidate_str = str(_candidate)
+    if candidate_str not in sys.path:
+        sys.path.insert(0, candidate_str)
 
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
-try:
-    from src.db.koneksi import init_db
-    from src.video.router import router as video_router
-    from src.clarification.router import router as clarification_router
-    from src.manipulation.router import router as manipulation_router
-except ImportError:
-    from backend.src.db.koneksi import init_db
-    from backend.src.video.router import router as video_router
-    from backend.src.clarification.router import router as clarification_router
-    from backend.src.manipulation.router import router as manipulation_router
+from src.db.koneksi import init_db
+from src.video.router import router as video_router
+from src.clarification.router import router as clarification_router
+from src.manipulation.router import router as manipulation_router
 
 logging.basicConfig(
     level=logging.INFO,

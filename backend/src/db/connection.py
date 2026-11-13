@@ -44,7 +44,38 @@ else:
     logger.info("DATABASE_URL not set. Falling back to local SQLite at %s", DB_PATH)
 
 # Engine configuration
-if IS_SQLITE:
+try:
+    if IS_SQLITE:
+        engine = create_engine(
+            DATABASE_URL,
+            connect_args={"check_same_thread": False},
+            echo=False,
+        )
+
+        @event.listens_for(engine, "connect")
+        def _set_sqlite_pragma(dbapi_connection, connection_record):
+            cursor = dbapi_connection.cursor()
+            cursor.execute("PRAGMA foreign_keys = ON")
+            cursor.close()
+
+    else:
+        # PostgreSQL connection (Neon / Cloud)
+        engine = create_engine(
+            DATABASE_URL,
+            pool_pre_ping=True,
+            pool_recycle=300,
+            echo=False,
+        )
+except ModuleNotFoundError as exc:
+    logger.warning(
+        "PostgreSQL driver is unavailable (%s). Falling back to SQLite for this deployment.",
+        exc,
+    )
+    _DATA_DIR = _BACKEND_DIR / "data"
+    _DATA_DIR.mkdir(parents=True, exist_ok=True)
+    DB_PATH = _DATA_DIR / "waraz.db"
+    DATABASE_URL = f"sqlite:///{DB_PATH}"
+    IS_SQLITE = True
     engine = create_engine(
         DATABASE_URL,
         connect_args={"check_same_thread": False},
@@ -56,16 +87,6 @@ if IS_SQLITE:
         cursor = dbapi_connection.cursor()
         cursor.execute("PRAGMA foreign_keys = ON")
         cursor.close()
-
-else:
-    # PostgreSQL connection (Neon / Cloud)
-    engine = create_engine(
-        DATABASE_URL,
-        pool_pre_ping=True,
-        pool_recycle=300,
-        echo=False,
-    )
-
 SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)
 
 

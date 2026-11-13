@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { useEffect, useState, useMemo } from "react";
 import Link from "next/link";
 import {
@@ -13,6 +14,7 @@ import {
   ChevronRight,
   Target,
 } from "lucide-react";
+import logoImg from "@/assets/logo.png";
 import {
   manipulationApi,
   ManipulationAnalysisResponse,
@@ -162,11 +164,14 @@ export default function ManipulationMapPage() {
       <header className="border-b border-red-900/40 bg-coal-900/60 backdrop-blur sticky top-0 z-40">
         <div className="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
           <div className="flex items-center gap-3">
-            <Link
-              href="/"
-              className="w-9 h-9 rounded-xl bg-red-600/20 border border-red-500/30 flex items-center justify-center text-red-400 font-bold shadow-lg shadow-red-600/25 hover:scale-105 transition"
-            >
-              W
+            <Link href="/" className="transition hover:scale-105">
+              <Image
+                src={logoImg}
+                alt="WARAZ logo"
+                width={36}
+                height={36}
+                className="h-9 w-9 rounded-xl border border-red-500/30 bg-red-600/20 p-1.5 object-contain shadow-lg shadow-red-600/25"
+              />
             </Link>
             <div>
               <div className="flex items-center gap-2">

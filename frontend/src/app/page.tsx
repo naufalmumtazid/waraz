@@ -9,6 +9,8 @@ import {
   BrainCircuit,
   FileCheck2,
 } from "lucide-react";
+import logoImg from "@/assets/logo.png";
+import Image from "next/image";
 
 export default function Home() {
   return (
@@ -16,17 +18,7 @@ export default function Home() {
       <header className="border-b border-red-900/40 bg-coal-900/60 backdrop-blur sticky top-0 z-40">
         <div className="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
           <div className="flex items-center gap-3">
-            <div className="w-9 h-9 rounded-xl bg-red-600/20 border border-red-500/30 flex items-center justify-center text-red-400 font-bold shadow-lg shadow-red-600/25">
-              W
-            </div>
-            <div>
-              <span className="font-bold tracking-tight text-red-400 text-base">
-                WARAZ
-              </span>
-              <span className="ml-2 text-[10px] px-2 py-0.5 rounded-full bg-coal-800 text-slate-400 font-mono">
-                Cyber Intelligence Platform
-              </span>
-            </div>
+            <Image src={logoImg} alt="logo waraz" width={400} height={400} className="max-w-24" />
           </div>
 
           <div className="text-xs text-slate-300">

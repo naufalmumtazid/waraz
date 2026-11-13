@@ -1,8 +1,10 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 import { ArrowLeft, CheckCircle2, FileText, ShieldCheck } from "lucide-react";
+import logoImg from "@/assets/logo.png";
 import { claimSubmissionApi } from "@/services/api";
 
 export default function SubmitClaimPage() {
@@ -60,9 +62,13 @@ export default function SubmitClaimPage() {
       <header className="border-b border-red-500/20 bg-coal-900/80 sticky top-0 z-40 backdrop-blur">
         <div className="max-w-5xl mx-auto px-4 h-16 flex items-center justify-between">
           <div className="flex items-center gap-3">
-            <div className="w-10 h-10 rounded-xl bg-red-500/15 border border-red-400/30 flex items-center justify-center text-red-300">
-              <FileText className="w-5 h-5" />
-            </div>
+            <Image
+              src={logoImg}
+              alt="WARAZ logo"
+              width={40}
+              height={40}
+              className="h-10 w-10 rounded-xl border border-red-400/30 bg-red-500/15 p-1.5 object-contain"
+            />
             <div>
               <div className="text-sm font-bold tracking-wide text-white">WARAZ</div>
               <div className="text-[10px] uppercase tracking-[0.2em] text-slate-400">

@@ -4,6 +4,7 @@ Provides adjustable thresholds for keyframe extraction, perceptual hashing,
 and sequential temporal matching.
 """
 
+import os
 from pathlib import Path
 
 # ─────────────────────────────────────────────────────────────
@@ -47,14 +48,33 @@ CONFIDENCE_MEDIUM_THRESHOLD: float = 0.40
 # ─────────────────────────────────────────────────────────────
 
 _BACKEND_DIR = Path(__file__).resolve().parent.parent.parent
-DATA_DIR = _BACKEND_DIR / "data"
+
+
+def _resolve_data_dir() -> Path:
+    """Return a writable directory for local runs or Vercel serverless deployments."""
+    if os.environ.get("VERCEL"):
+        return Path("/tmp/data")
+    return _BACKEND_DIR / "data"
+
+
+DATA_DIR = _resolve_data_dir()
 THUMBNAIL_DIR = DATA_DIR / "thumbnails"
 VIDEO_ARCHIVE_DIR = DATA_DIR / "arsip_video"
 TEMP_DIR = DATA_DIR / "temp"
 
-# Ensure runtime directories exist
-for _directory in [DATA_DIR, THUMBNAIL_DIR, VIDEO_ARCHIVE_DIR, TEMP_DIR]:
-    _directory.mkdir(parents=True, exist_ok=True)
+
+def ensure_storage_dirs() -> tuple[Path, Path, Path, Path]:
+    """Create storage directories lazily only when they are needed."""
+    base_dir = _resolve_data_dir()
+    dirs = (
+        base_dir,
+        base_dir / "thumbnails",
+        base_dir / "arsip_video",
+        base_dir / "temp",
+    )
+    for directory in dirs:
+        directory.mkdir(parents=True, exist_ok=True)
+    return dirs
 
 # ─────────────────────────────────────────────────────────────
 # Backward-compatibility Aliases

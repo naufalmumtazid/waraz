@@ -20,6 +20,21 @@ load_dotenv(_BACKEND_DIR / ".env")
 
 logger = logging.getLogger("waraz.db")
 
+
+def _resolve_data_dir() -> Path:
+    """Use a writable path for local runs and serverless deployments."""
+    if os.environ.get("VERCEL"):
+        return Path("/tmp/data")
+    return _BACKEND_DIR / "data"
+
+
+def _ensure_sqlite_dir() -> Path:
+    """Create the SQLite storage directory lazily when it is needed."""
+    data_dir = _resolve_data_dir()
+    data_dir.mkdir(parents=True, exist_ok=True)
+    return data_dir
+
+
 # ─────────────────────────────────────────────────────────────
 # Database URL Resolution (Cloud PostgreSQL vs SQLite fallback)
 # ─────────────────────────────────────────────────────────────
@@ -35,10 +50,10 @@ if RAW_DB_URL:
     IS_SQLITE = False
     logger.info("Configuring PostgreSQL (Neon/Cloud) database engine.")
 else:
-    # Local SQLite fallback for development & offline testing
-    _DATA_DIR = _BACKEND_DIR / "data"
-    _DATA_DIR.mkdir(parents=True, exist_ok=True)
-    DB_PATH = _DATA_DIR / "waraz.db"
+    # Local SQLite fallback for development & offline testing.
+    # The directory is created lazily so Vercel's read-only /var/task mount is not touched.
+    sqlite_dir = _ensure_sqlite_dir()
+    DB_PATH = sqlite_dir / "waraz.db"
     DATABASE_URL = f"sqlite:///{DB_PATH}"
     IS_SQLITE = True
     logger.info("DATABASE_URL not set. Falling back to local SQLite at %s", DB_PATH)
@@ -71,9 +86,8 @@ except ModuleNotFoundError as exc:
         "PostgreSQL driver is unavailable (%s). Falling back to SQLite for this deployment.",
         exc,
     )
-    _DATA_DIR = _BACKEND_DIR / "data"
-    _DATA_DIR.mkdir(parents=True, exist_ok=True)
-    DB_PATH = _DATA_DIR / "waraz.db"
+    sqlite_dir = _ensure_sqlite_dir()
+    DB_PATH = sqlite_dir / "waraz.db"
     DATABASE_URL = f"sqlite:///{DB_PATH}"
     IS_SQLITE = True
     engine = create_engine(

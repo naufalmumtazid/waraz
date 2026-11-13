@@ -28,7 +28,12 @@ from .layanan import daftarkan_video_arsip
 logger = logging.getLogger(__name__)
 
 DEMO_DIR = DATA_DIR / "demo_videos"
-DEMO_DIR.mkdir(parents=True, exist_ok=True)
+
+
+def _ensure_demo_dir() -> Path:
+    """Create the demo output directory lazily for local or serverless runs."""
+    DEMO_DIR.mkdir(parents=True, exist_ok=True)
+    return DEMO_DIR
 
 
 def buat_video_sintetis(
@@ -158,6 +163,7 @@ def buat_video_sintetis(
 
 def siapkan_koleksi_demo() -> Dict[str, Path]:
     """Membuat kumpulan video arsip dan variasi daur ulang untuk demonstrasi & evaluasi."""
+    _ensure_demo_dir()
     hasil: Dict[str, Path] = {}
 
     # 1. Arsip Asli 1: Simulasi Gempa
